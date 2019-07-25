@@ -12,10 +12,9 @@ class Cube:
         temp = self.top[(n-slice_no)*n:(n+1-slice_no)*n]
         self.top[(n-slice_no)*n:(n+1-slice_no) *
                  n] = self.left[(n**2)-slice_no::-n]
-        self.left[(n**2)-slice_no::-n] = self.down[(n-slice_no)
-                                                   * n+(n-1):(n-slice_no-1)*n+(n-1):-1]
-        self.down[(n-slice_no)*n+(n-1):(n-slice_no-1)*n+(n-1):-1] = self.right[n - slice_no::n]
-        self.top[n - slice_no::n] = temp
+        self.left[(n**2)-slice_no::-n] = self.down[(slice_no-1)*n:slice_no*n][::-1]
+        self.down[(slice_no-1)*n:slice_no*n] = self.right[slice_no-1::n][::-1]
+        self.right[slice_no-1::n] = temp
         return self
 
     def R(self, slice_no=1):
@@ -26,8 +25,8 @@ class Cube:
             self.left.anti_clock_wise()
         temp = self.front[n - slice_no::n]
         self.front[n - slice_no::n] = self.down[n - slice_no::n]
-        self.down[n - slice_no::n] = self.back[(n-1)*n::-n]
-        self.back[(n-1)*n::-n] = self.top[n - slice_no::n]
+        self.down[n - slice_no::n] = self.back[(n-1)*n + slice_no - 1::-n]
+        self.back[(n-1)*n + slice_no - 1::-n] = self.top[n - slice_no::n]
         self.top[n - slice_no::n] = temp
         return self
 
@@ -38,8 +37,8 @@ class Cube:
         elif slice_no == n:
             self.left.clock_wise()
         temp = self.top[n - slice_no::n]
-        self.top[n - slice_no::n] = self.back[(n-1)*n::-n]
-        self.back[(n-1)*n::-n] = self.down[n - slice_no::n]
+        self.top[n - slice_no::n] = self.back[(n-1)*n + slice_no - 1::-n]
+        self.back[(n-1)*n + slice_no - 1::-n] = self.down[n - slice_no::n]
         self.down[n - slice_no::n] = self.front[n - slice_no::n]
         self.front[n - slice_no::n] = temp
         return self
@@ -53,8 +52,8 @@ class Cube:
         temp = self.top[n - slice_no::n]
         self.top[n - slice_no::n] = self.down[n - slice_no::n]
         self.down[n - slice_no::n] = temp
-        temp = self.back[(n-1)*n::-n]
-        self.back[(n-1)*n::-n] = self.front[n - slice_no::n]
+        temp = self.back[(n-1)*n + slice_no - 1::-n]
+        self.back[(n-1)*n + slice_no - 1::-n] = self.front[n - slice_no::n]
         self.front[n - slice_no::n] = temp
         return self
 
