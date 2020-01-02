@@ -1,38 +1,57 @@
+# Face represents the 6 faces of the Rubik's cube
 class Face:
 
-    def clock_wise(self):
-        a = self.stickers
-        n = self.size
-        for i in range(n // 2):
-            strt, end = i, n - 1 - i
-            temp = a[strt*n + strt: strt*n + end]
-            a[strt*n + strt: strt*n + end] = a[end*n + strt: strt*n + strt: -n]
-            a[end*n + strt: strt*n + strt: -n] = a[end*n + end: end*n + strt: -1]
-            a[end*n + end: end*n + strt: -1] = a[strt*n + end: end*n + end: n]
-            a[strt*n + end: end*n + end: n] = temp
-        self.stickers = a
-        return self
 
-    def anti_clock_wise(self):
-        a = self.stickers
-        n = self.size
-        for i in range(n // 2):
-            strt, end = i, n - 1 - i
-            temp = a[strt*n + end: end*n + end: n]
-            a[strt*n + end: end*n + end: n] = a[end*n + end: end*n + strt: -1]
-            a[end*n + end: end*n + strt: -1] = a[end*n + strt: strt*n + strt: -n]
-            a[end*n + strt: strt*n + strt: -n] = a[strt*n + strt: strt*n + end]
-            a[strt*n + strt: strt*n + end] = temp
-        self.stickers = a
-        return self
+  # Constructor
+  def __init__(self, color):
 
-    def is_solved(self):
-        for i in range(1, self.size ** 2):
-            if self.stickers[i] != self.stickers[0]:
-                return False
-        return True
+    # Initialize the stickers of the face by
+    # the color passed to the constructor
+    # Lower case letters represent corners
+    # Upper case letters represent edges
+    # Numbers represent the centers in the order of Speff's lettering scheme
+    self.stickers = {
+      'W': ['a', 'A', 'b',
+            'D', '1', 'B',
+            'd', 'C', 'c'],
+      'O': ['e', 'E', 'f',
+            'H', '2', 'F',
+            'h', 'G', 'g'],
+      'G': ['i', 'I', 'j',
+            'L', '3', 'J',
+            'l', 'K', 'k'],
+      'R': ['m', 'M', 'n',
+            'P', '4', 'N',
+            'p', 'O', 'o'],
+      'B': ['q', 'Q', 'r',
+            'T', '5', 'R',
+            't', 'S', 's'],
+      'Y': ['u', 'U', 'v',
+            'X', '6', 'V',
+            'x', 'W', 'w']
+    }[color]
 
-    def __init__(self, face_color='W', size=3):
-        self.size = size
-        self.stickers = list(face_color) * size ** 2
-        self.stickers = list(map(lambda x: chr(x), range(65, 65 + size ** 2)))
+    # This is the correct position of the face
+    self.correct_pos = self.stickers[:]
+  
+
+  # Rotate the stickers clockwise
+  def clock_wise(self):
+
+    # Alias for stickers
+    a = self.stickers
+
+    # cycles = (0,2,8,6), (1,5,7,3)
+    a[2], a[8], a[6], a[0] = a[0], a[2], a[8], a[6]
+    a[5], a[7], a[3], a[1] = a[1], a[5], a[7], a[3]
+  
+
+  # Rotate the stickers anticlockwise
+  def anti_clock_wise(self):
+
+    # Alias for stickers
+    a = self.stickers
+
+    # cycles = (6,8,2,0), (3,7,5,1)
+    a[0], a[2], a[8], a[6] = a[2], a[8], a[6], a[0]
+    a[1], a[5], a[7], a[3] = a[5], a[7], a[3], a[1]
