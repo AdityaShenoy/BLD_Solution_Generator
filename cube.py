@@ -1,5 +1,6 @@
 from face import Face
 
+
 # Cube represents the Rubik's cube
 class Cube:
 
@@ -180,7 +181,7 @@ class Cube:
     return cycles
   
 
-  # Solves the cube
+  # Solves and returns the cube
   def solve(self):
 
     # Following lines updates the stickers of all the cubes
@@ -191,3 +192,6 @@ class Cube:
     self.back.stickers = self.back.correct_pos[:]
     self.left.stickers = self.left.correct_pos[:]
     self.right.stickers = self.right.correct_pos[:]
+
+    # Return the solved instance
+    return self

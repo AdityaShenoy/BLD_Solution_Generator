@@ -1,0 +1,2317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0048)http://archive.garron.us/html/2009/bhlinked.html -->
+<!-- saved from url=(0048)http://archive.garron.us/html/2009/bhhacked.html --><HTML><HEAD><TITLE>Beyer-Hardwick Corner Algorithms</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY vLink=blue><FONT size=6>Beyer-Hardwick Corner Algorithms</FONT> 
+<HR>
+<FONT size=3>Hello and welcome to Daniel's and Chris' page about our jointly 
+created blind solving method. The method was created by Daniel Beyer and Chris 
+Hardwick to be used as an advanced method for solving any sized cube 
+blindfolded. This page is under construction, so please bear with us as we add 
+more material to this website.<BR><BR>This particular page is about solving 
+corners using the Beyer-Hardwick method. The goal is to use an optimal length 
+algorithm for all 3-cycles starting from a fixed buffer piece. You perform 
+sticker cycles, and will thus solve the position and orientation of any given 
+corner at the same time. The goal is to have a prepared algorithm for every 
+possible cycle, reducing the thinking time during solving. Other pages will be 
+devoted to how to figure out which type of algorithm to use given a certain 
+cycle. This is based on the case name for each algorithm. If you are interested 
+to learn the method, please continue to check back for further pages explaining 
+how to use the case names of each algorithm below.<BR><BR>Here are the number of 
+each length algorithm necessary to solve all possible corner 3-cycles starting 
+from a fixed buffer.</FONT><BR><BR>
+The following are all algorithms necessary to use the Beyer-Hardwick 
+method for corners. Please bear in mind that there are often multiple algorithms 
+you could use for a certain case. The case name is more important for each 
+algorithm than the given algorithm. In later pages to follow you will see how to 
+use the case name for a certain cycle to construct the correct algorithm when 
+solving. We include one algorithm for each case merely for 
+completeness.</FONT><BR><BR>
+
+<FONT size=3>Many thanks to <A 
+href="http://cube.garron.us/">Lucas Garron</A> for coding this page to show an 
+applet for each algorithm. If you would like a printable version of this page <A 
+href="bhcorners-printable.html" target="_new">click here</A>.</FONT><BR><BR>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 bgColor=black border=0>
+  <TBODY>
+  <TR>
+    <TD><!-- first level, inside table -->
+      <TABLE cellSpacing=1 cellPadding=10 border=0>
+        <TBODY>
+        <TR bgColor=white>
+          <TD><FONT size=4><B>Cycle</B></FONT></TD>
+          <TD><FONT size=3><B>Algorithm (optimal length)</B></FONT></TD>
+          <TD><FONT size=3><B>Case Name</B></FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_ULF)&amp;alg=L_F'_L_B2_L'_F_L_B2_L2&amp;animtype=solve">L 
+            F' L B2 L' F L B2 L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_UFR)&amp;alg=R2_B2_R_F_R'_B2_R_F'_R&amp;animtype=solve">R2 
+            B2 R F R' B2 R F' R</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_FUL)&amp;alg=L_F_R'_F'_L'_F_R_F'&amp;animtype=solve">L 
+            F R' F' L' F R F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_FRU)&amp;alg=R_B_L_B'_R'_B_L'_B'&amp;animtype=solve">R 
+            B L B' R' B L' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_FLD)&amp;alg=U'_B_D'_B'_U_B_D_B'&amp;animtype=solve">U' 
+            B D' B' U B D B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_FDR)&amp;alg=U'_L'_D2_L_U_L'_D2_L&amp;animtype=solve">U' 
+            L' D2 L U L' D2 L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_RUF)&amp;alg=B_U2_B_D_B'_U2_B_D'_B2&amp;animtype=solve">B 
+            U2 B D B' U2 B D' B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_RFD)&amp;alg=U'_B_D2_B'_U_B_D2_B'&amp;animtype=solve">U' 
+            B D2 B' U B D2 B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_RDB)&amp;alg=U'_L'_D_L_U_L'_D'_L&amp;animtype=solve">U' 
+            L' D L U L' D' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_BRD)&amp;alg=R'_B_L_B'_R_B_L'_B'&amp;animtype=solve">R' 
+            B L B' R B L' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_BDL)&amp;alg=U'_B_D_B'_U_B_D'_B'&amp;animtype=solve">U' 
+            B D B' U B D' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_LFU)&amp;alg=B2_D'_B_U2_B'_D_B_U2_B&amp;animtype=solve">B2 
+            D' B U2 B' D B U2 B</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_LBD)&amp;alg=U'_L'_D'_L_U_L'_D_L&amp;animtype=solve">U' 
+            L' D' L U L' D L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_LDF)&amp;alg=B'_D2_B_U_B'_D2_B_U'&amp;animtype=solve">B' 
+            D2 B U B' D2 B U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_DFL)&amp;alg=L2_D_R2_D'_L2_D_R2_D'&amp;animtype=solve">L2 
+            D R2 D' L2 D R2 D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_DRF)&amp;alg=R2_B_L_B'_R2_B_L'_B'&amp;animtype=solve">R2 
+            B L B' R2 B L' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_DLB)&amp;alg=D_L2_D_R2_D'_L2_D_R2_D2&amp;animtype=solve">D 
+            L2 D R2 D' L2 D R2 D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UBL DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UBL_DBR)&amp;alg=D2_L2_D_R2_D'_L2_D_R2_D&amp;animtype=solve">D2 
+            L2 D R2 D' L2 D R2 D</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_UBL)&amp;alg=L2_B2_L'_F'_L_B2_L'_F_L'&amp;animtype=solve">L2 
+            B2 L' F' L B2 L' F L'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_UFR)&amp;alg=R_B'_R_F2_R'_B_R_F2_R2&amp;animtype=solve">R 
+            B' R F2 R' B R F2 R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_FRU)&amp;alg=L2_B2_L'_F2_L_B2_L'_F2_L'&amp;animtype=solve">L2 
+            B2 L' F2 L B2 L' F2 L'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_FLD)&amp;alg=U2_F'_D'_F_U2_F'_D_F&amp;animtype=solve">U2 
+            F' D' F U2 F' D F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_FDR)&amp;alg=B'_D_B_U2_B'_D'_B_U2&amp;animtype=solve">B' 
+            D B U2 B' D' B U2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_RUF)&amp;alg=B'_R2_B'_L2_B_R2_B'_L2_B2&amp;animtype=solve">B' 
+            R2 B' L2 B R2 B' L2 B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_RFD)&amp;alg=U2_L_D'_L'_U2_L_D_L'&amp;animtype=solve">U2 
+            L D' L' U2 L D L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_RDB)&amp;alg=U2_F'_D2_F_U2_F'_D2_F&amp;animtype=solve">U2 
+            F' D2 F U2 F' D2 F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_BLU)&amp;alg=R_B2_R_F2_R'_B2_R_F2_R2&amp;animtype=solve">R 
+            B2 R F2 R' B2 R F2 R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_BRD)&amp;alg=U2_L_D2_L'_U2_L_D2_L'&amp;animtype=solve">U2 
+            L D2 L' U2 L D2 L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_BDL)&amp;alg=U2_F'_D_F_U2_F'_D'_F&amp;animtype=solve">U2 
+            F' D F U2 F' D' F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_LUB)&amp;alg=F2_R2_F_L2_F'_R2_F_L2_F&amp;animtype=solve">F2 
+            R2 F L2 F' R2 F L2 F</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_LBD)&amp;alg=R_D'_R'_U2_R_D_R'_U2&amp;animtype=solve">R 
+            D' R' U2 R D R' U2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_LDF)&amp;alg=U2_L_D_L'_U2_L_D'_L'&amp;animtype=solve">U2 
+            L D L' U2 L D' L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_DFL)&amp;alg=R_U2_R'_U'_L2_U_R_U'_L2_U'_R'&amp;animtype=solve">R 
+            U2 R' U' L2 U R U' L2 U' R'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_DRF)&amp;alg=U_F2_U'_F2_U'_R2_U_F2_U_F2_U'_R2&amp;animtype=solve">U 
+            F2 U' F2 U' R2 U F2 U F2 U' R2</A> (12 HTM)</FONT></TD>
+          <TD><FONT size=3>Per Special</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_DLB)&amp;alg=U2_F_U2_F'_L2_F'_L2_F_L2_B_L2_B'&amp;animtype=solve">U2 
+            F U2 F' L2 F' L2 F L2 B L2 B'</A> (12 HTM)</FONT></TD>
+          <TD><FONT size=3>Per Special</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB ULF DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_ULF_DBR)&amp;alg=R_B_R2_B_L'_B'_R2_B_L_B2_R'&amp;animtype=solve">R 
+            B R2 B L' B' R2 B L B2 R'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_UBL)&amp;alg=R'_F_R'_B2_R_F'_R'_B2_R2&amp;animtype=solve">R' 
+            F R' B2 R F' R' B2 R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_ULF)&amp;alg=R2_F2_R'_B'_R_F2_R'_B_R'&amp;animtype=solve">R2 
+            F2 R' B' R F2 R' B R'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_FUL)&amp;alg=R2_D_R'_U2_R_D'_R'_U2_R'&amp;animtype=solve">R2 
+            D R' U2 R D' R' U2 R'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_FLD)&amp;alg=R_D2_R'_U'_R_D2_R'_U&amp;animtype=solve">R 
+            D2 R' U' R D2 R' U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_FDR)&amp;alg=U_F_D_F'_U'_F_D'_F'&amp;animtype=solve">U 
+            F D F' U' F D' F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_RFD)&amp;alg=U_R'_D'_R_U'_R'_D_R&amp;animtype=solve">U 
+            R' D' R U' R' D R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_RDB)&amp;alg=R_D_R'_U'_R_D'_R'_U&amp;animtype=solve">R 
+            D R' U' R D' R' U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_BLU)&amp;alg=R'_U2_R'_D'_R_U2_R'_D_R2&amp;animtype=solve">R' 
+            U2 R' D' R U2 R' D R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_BRD)&amp;alg=U_F_D'_F'_U'_F_D_F'&amp;animtype=solve">U 
+            F D' F' U' F D F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_BDL)&amp;alg=U_R'_D2_R_U'_R'_D2_R&amp;animtype=solve">U 
+            R' D2 R U' R' D2 R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_LUB)&amp;alg=L_F'_L'_B_L_F_L'_B'&amp;animtype=solve">L 
+            F' L' B L F L' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_LFU)&amp;alg=R_B_R'_F_R_B'_R'_F'&amp;animtype=solve">R 
+            B R' F R B' R' F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_LBD)&amp;alg=U_F_D2_F'_U'_F_D2_F'&amp;animtype=solve">U 
+            F D2 F' U' F D2 F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_LDF)&amp;alg=U_R'_D_R_U'_R'_D'_R&amp;animtype=solve">U 
+            R' D R U' R' D' R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_DFL)&amp;alg=R_B_R'_F2_R_B'_R'_F2&amp;animtype=solve">R 
+            B R' F2 R B' R' F2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_DRF)&amp;alg=D'_F2_D'_B2_D_F2_D'_B2_D2&amp;animtype=solve">D' 
+            F2 D' B2 D F2 D' B2 D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_DLB)&amp;alg=D_F2_D'_B2_D_F2_D'_B2&amp;animtype=solve">D 
+            F2 D' B2 D F2 D' B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB UFR DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_UFR_DBR)&amp;alg=D2_F2_D'_B2_D_F2_D'_B2_D'&amp;animtype=solve">D2 
+            F2 D' B2 D F2 D' B2 D'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_UBL)&amp;alg=F_R'_F'_L_F_R_F'_L'&amp;animtype=solve">F 
+            R' F' L F R F' L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_UFR)&amp;alg=R_U2_R_D_R'_U2_R_D'_R2&amp;animtype=solve">R 
+            U2 R D R' U2 R D' R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_FRU)&amp;alg=U_L_U'_R'_U_L'_U'_R&amp;animtype=solve">U 
+            L U' R' U L' U' R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_FLD)&amp;alg=F'_L_B2_L'_F_L_B2_L'&amp;animtype=solve">F' 
+            L B2 L' F L B2 L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_FDR)&amp;alg=F2_D_B'_D'_F2_D_B_D'&amp;animtype=solve">F2 
+            D B' D' F2 D B D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_RUF)&amp;alg=F2_D'_F_U2_F'_D_F_U2_F&amp;animtype=solve">F2 
+            D' F U2 F' D F U2 F</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_RFD)&amp;alg=U_R'_B2_R_F_R'_B2_R_F'_U'&amp;animtype=solve">U 
+            R' B2 R F R' B2 R F' U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_RDB)&amp;alg=D'_F2_D_B'_D'_F2_D_B&amp;animtype=solve">D' 
+            F2 D B' D' F2 D B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_BLU)&amp;alg=F_R'_U2_R_F'_R'_F_U2_F'_R&amp;animtype=solve">F 
+            R' U2 R F' R' F U2 F' R</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_BRD)&amp;alg=B'_L2_B_R_B'_L2_B_R'&amp;animtype=solve">B' 
+            L2 B R B' L2 B R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_BDL)&amp;alg=F_R'_F'_L2_F_R_F'_L2&amp;animtype=solve">F 
+            R' F' L2 F R F' L2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_LUB)&amp;alg=L_F_L'_B_L_F'_L'_B'&amp;animtype=solve">L 
+            F L' B L F' L' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_LBD)&amp;alg=U_L'_B_R2_B'_L_B_R2_B'_U'&amp;animtype=solve">U 
+            L' B R2 B' L B R2 B' U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_LDF)&amp;alg=D_F2_D_B'_D'_F2_D_B_D2&amp;animtype=solve">D 
+            F2 D B' D' F2 D B D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_DFL)&amp;alg=F_R'_F'_L'_F_R_F'_L&amp;animtype=solve">F 
+            R' F' L' F R F' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_DRF)&amp;alg=D'_L_D_R2_D'_L'_D_R2&amp;animtype=solve">D' 
+            L D R2 D' L' D R2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_DLB)&amp;alg=B2_R'_F_R_B2_R'_F'_R&amp;animtype=solve">B2 
+            R' F R B2 R' F' R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FUL DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FUL_DBR)&amp;alg=D2_L_D_R2_D'_L'_D_R2_D&amp;animtype=solve">D2 
+            L D R2 D' L' D R2 D</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_UBL)&amp;alg=R'_F'_L_F_R_F'_L'_F&amp;animtype=solve">R' 
+            F' L F R F' L' F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_ULF)&amp;alg=L_F2_L_B2_L'_F2_L_B2_L2&amp;animtype=solve">L 
+            F2 L B2 L' F2 L B2 L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_FUL)&amp;alg=U'_B'_U_F_U'_B_U_F'&amp;animtype=solve">U' 
+            B' U F U' B U F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_FLD)&amp;alg=U'_B'_U_F2_U'_B_U_F2&amp;animtype=solve">U' 
+            B' U F2 U' B U F2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_FDR)&amp;alg=U'_B'_U_F'_U'_B_U_F&amp;animtype=solve">U' 
+            B' U F' U' B U F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_RFD)&amp;alg=U2_L'_U_R2_U'_L_U_R2_U&amp;animtype=solve">U2 
+            L' U R2 U' L U R2 U</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_RDB)&amp;alg=D'_F_D_B'_D'_F'_D_B&amp;animtype=solve">D' 
+            F D B' D' F' D B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_BLU)&amp;alg=L2_F2_L_B2_L'_F2_L_B2_L&amp;animtype=solve">L2 
+            F2 L B2 L' F2 L B2 L</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_BRD)&amp;alg=U_F'_U_B2_U'_F_U_B2_U2&amp;animtype=solve">U 
+            F' U B2 U' F U B2 U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_BDL)&amp;alg=U'_L_U_R_U'_L'_U_R'&amp;animtype=solve">U' 
+            L U R U' L' U R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_LUB)&amp;alg=U'_L'_U_R_U'_L_U_R'&amp;animtype=solve">U' 
+            L' U R U' L U R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_LFU)&amp;alg=R'_F'_L'_F_R_F'_L_F&amp;animtype=solve">R' 
+            F' L' F R F' L F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_LBD)&amp;alg=R'_U_L2_U'_R_U_L2_U'&amp;animtype=solve">R' 
+            U L2 U' R U L2 U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_LDF)&amp;alg=R'_U_L'_U'_R_U_L_U'&amp;animtype=solve">R' 
+            U L' U' R U L U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_DFL)&amp;alg=U'_L2_U_R_U'_L2_U_R'&amp;animtype=solve">U' 
+            L2 U R U' L2 U R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_DRF)&amp;alg=U2_F2_U_B_U'_F2_U_B'_U&amp;animtype=solve">U2 
+            F2 U B U' F2 U B' U</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_DLB)&amp;alg=L'_F2_L_B2_L'_F2_L_B2&amp;animtype=solve">L' 
+            F2 L B2 L' F2 L B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FRU DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FRU_DBR)&amp;alg=U_R2_U_L_U'_R2_U_L'_U2&amp;animtype=solve">U 
+            R2 U L U' R2 U L' U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_UBL)&amp;alg=U_R_D2_R'_U'_R_D2_R'&amp;animtype=solve">U 
+            R D2 R' U' R D2 R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_ULF)&amp;alg=U2_R_D2_R'_U2_R_D2_R'&amp;animtype=solve">U2 
+            R D2 R' U2 R D2 R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_UFR)&amp;alg=U'_R_D2_R'_U_R_D2_R'&amp;animtype=solve">U' 
+            R D2 R' U R D2 R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_FUL)&amp;alg=L_B2_L'_F'_L_B2_L'_F&amp;animtype=solve">L 
+            B2 L' F' L B2 L' F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_FRU)&amp;alg=F2_U'_B'_U_F2_U'_B_U&amp;animtype=solve">F2 
+            U' B' U F2 U' B U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_FDR)&amp;alg=F'_D_B'_D'_F_D_B_D'&amp;animtype=solve">F' 
+            D B' D' F D B D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_RUF)&amp;alg=B'_R2_B'_L_B_R2_B'_L'_B2&amp;animtype=solve">B' 
+            R2 B' L B R2 B' L' B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_RFD)&amp;alg=D_F'_U_F_D'_F'_U'_F&amp;animtype=solve">D 
+            F' U F D' F' U' F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_RDB)&amp;alg=B_R'_F2_R_B'_R'_F2_R&amp;animtype=solve">B 
+            R' F2 R B' R' F2 R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_BLU)&amp;alg=U_B2_D'_B'_U2_B_D_B'_U2_B'_U'&amp;animtype=solve">U 
+            B2 D' B' U2 B D B' U2 B' U'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_BRD)&amp;alg=D2_B_U_B'_D2_B_U'_B'&amp;animtype=solve">D2 
+            B U B' D2 B U' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_BDL)&amp;alg=F2_R'_F'_L2_F_R_F'_L2_F'&amp;animtype=solve">F2 
+            R' F' L2 F R F' L2 F'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_LUB)&amp;alg=U'_F_U_B_U'_F'_U_B'&amp;animtype=solve">U' 
+            F U B U' F' U B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_LFU)&amp;alg=D2_R_D_L2_D'_R'_D_L2_D&amp;animtype=solve">D2 
+            R D L2 D' R' D L2 D</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_LBD)&amp;alg=L'_U2_L_D_L'_U2_L_D'&amp;animtype=solve">L' 
+            U2 L D L' U2 L D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_DRF)&amp;alg=U_L'_U_F2_U'_L_U_L'_F2_L_U2&amp;animtype=solve">U 
+            L' U F2 U' L U L' F2 L U2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_DLB)&amp;alg=D_F_D'_B2_D_F'_D'_B2&amp;animtype=solve">D 
+            F D' B2 D F' D' B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FLD DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FLD_DBR)&amp;alg=U_R2_U_L'_U'_R2_U_L_U2&amp;animtype=solve">U 
+            R2 U L' U' R2 U L U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_UBL)&amp;alg=U_B'_D_B_U'_B'_D'_B&amp;animtype=solve">U 
+            B' D B U' B' D' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_ULF)&amp;alg=U2_B'_D_B_U2_B'_D'_B&amp;animtype=solve">U2 
+            B' D B U2 B' D' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_UFR)&amp;alg=U'_B'_D_B_U_B'_D'_B&amp;animtype=solve">U' 
+            B' D B U B' D' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_FUL)&amp;alg=D_B'_D'_F2_D_B_D'_F2&amp;animtype=solve">D 
+            B' D' F2 D B D' F2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_FRU)&amp;alg=F'_U'_B'_U_F_U'_B_U&amp;animtype=solve">F' 
+            U' B' U F U' B U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_FLD)&amp;alg=F_L_B2_L'_F'_L_B2_L'&amp;animtype=solve">F 
+            L B2 L' F' L B2 L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_RUF)&amp;alg=D_B'_R2_B_D'_B'_D_R2_D'_B&amp;animtype=solve">D 
+            B' R2 B D' B' D R2 D' B</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_RDB)&amp;alg=R_F_R'_B'_R_F'_R'_B&amp;animtype=solve">R 
+            F R' B' R F' R' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_BLU)&amp;alg=L2_F_L_B2_L'_F'_L_B2_L&amp;animtype=solve">L2 
+            F L B2 L' F' L B2 L</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_BRD)&amp;alg=B_R2_B_L_B'_R2_B_L'_B2&amp;animtype=solve">B 
+            R2 B L B' R2 B L' B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_BDL)&amp;alg=D2_L_U'_L'_D2_L_U_L'&amp;animtype=solve">D2 
+            L U' L' D2 L U L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_LUB)&amp;alg=U'_F2_U_B_U'_F2_U_B'&amp;animtype=solve">U' 
+            F2 U B U' F2 U B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_LFU)&amp;alg=U_R'_F_L2_F'_R_F_L2_F'_U'&amp;animtype=solve">U 
+            R' F L2 F' R F L2 F' U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_LBD)&amp;alg=U_F'_L2_F_R_F'_L2_F_R'_U'&amp;animtype=solve">U 
+            F' L2 F R F' L2 F R' U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_LDF)&amp;alg=D'_F_U2_F'_D_F_U2_F'&amp;animtype=solve">D' 
+            F U2 F' D F U2 F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_DFL)&amp;alg=L_D2_L_U'_L'_D2_L_U_L2&amp;animtype=solve">L 
+            D2 L U' L' D2 L U L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_DLB)&amp;alg=L'_F_L_B2_L'_F'_L_B2&amp;animtype=solve">L' 
+            F L B2 L' F' L B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB FDR DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_FDR_DBR)&amp;alg=D2_L'_D_R2_D'_L_D_R2_D&amp;animtype=solve">D2 
+            L' D R2 D' L D R2 D</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_UBL)&amp;alg=B2_D_B'_U2_B_D'_B'_U2_B'&amp;animtype=solve">B2 
+            D B' U2 B D' B' U2 B'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_ULF)&amp;alg=B2_L2_B_R2_B'_L2_B_R2_B&amp;animtype=solve">B2 
+            L2 B R2 B' L2 B R2 B</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_FUL)&amp;alg=F'_U2_F'_D'_F_U2_F'_D_F2&amp;animtype=solve">F' 
+            U2 F' D' F U2 F' D F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_FLD)&amp;alg=B2_L_B_R2_B'_L'_B_R2_B&amp;animtype=solve">B2 
+            L B R2 B' L' B R2 B</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_FDR)&amp;alg=B'_D_R2_D'_B_D_B'_R2_B_D'&amp;animtype=solve">B' 
+            D R2 D' B D B' R2 B D'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_RFD)&amp;alg=F_R2_F_L_F'_R2_F_L'_F2&amp;animtype=solve">F 
+            R2 F L F' R2 F L' F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_RDB)&amp;alg=F'_U2_F'_D2_F_U2_F'_D2_F2&amp;animtype=solve">F' 
+            U2 F' D2 F U2 F' D2 F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_BLU)&amp;alg=L_F'_U2_F_L'_F'_L_U2_L'_F&amp;animtype=solve">L 
+            F' U2 F L' F' L U2 L' F</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_BRD)&amp;alg=B2_L'_B_R2_B'_L_B_R2_B&amp;animtype=solve">B2 
+            L' B R2 B' L B R2 B</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_BDL)&amp;alg=F'_U2_F'_D_F_U2_F'_D'_F2&amp;animtype=solve">F' 
+            U2 F' D F U2 F' D' F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_LUB)&amp;alg=F_R2_F_L2_F'_R2_F_L2_F2&amp;animtype=solve">F 
+            R2 F L2 F' R2 F L2 F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_LFU)&amp;alg=B_L'_U2_L_B'_L'_B_U2_B'_L&amp;animtype=solve">B 
+            L' U2 L B' L' B U2 B' L</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_LBD)&amp;alg=F_R2_F_L'_F'_R2_F_L_F2&amp;animtype=solve">F 
+            R2 F L' F' R2 F L F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_LDF)&amp;alg=U2_B'_U2_B'_D2_B_U2_B'_D2_B2_U2&amp;animtype=solve">U2 
+            B' U2 B' D2 B U2 B' D2 B2 U2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_DFL)&amp;alg=B2_D'_B'_U2_B_D_B'_U2_B'&amp;animtype=solve">B2 
+            D' B' U2 B D B' U2 B'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_DRF)&amp;alg=B2_D2_B'_U2_B_D2_B'_U2_B'&amp;animtype=solve">B2 
+            D2 B' U2 B D2 B' U2 B'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_DLB)&amp;alg=U_R2_D'_R'_U2_R_D_R'_U2_R'_U'&amp;animtype=solve">U 
+            R2 D' R' U2 R D R' U2 R' U'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RUF DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RUF_DBR)&amp;alg=D'_F_R2_F'_D_F_D'_R2_D_F'&amp;animtype=solve">D' 
+            F R2 F' D F D' R2 D F'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_UBL)&amp;alg=B_D2_B'_U'_B_D2_B'_U&amp;animtype=solve">B 
+            D2 B' U' B D2 B' U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_ULF)&amp;alg=L_D'_L'_U2_L_D_L'_U2&amp;animtype=solve">L 
+            D' L' U2 L D L' U2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_UFR)&amp;alg=R'_D'_R_U_R'_D_R_U'&amp;animtype=solve">R' 
+            D' R U R' D R U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_FUL)&amp;alg=U_F_R'_B2_R_F'_R'_B2_R_U'&amp;animtype=solve">U 
+            F R' B2 R F' R' B2 R U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_FRU)&amp;alg=U'_R2_U'_L'_U_R2_U'_L_U2&amp;animtype=solve">U' 
+            R2 U' L' U R2 U' L U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_FLD)&amp;alg=F'_U_F_D_F'_U'_F_D'&amp;animtype=solve">F' 
+            U F D F' U' F D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_RUF)&amp;alg=F2_L_F'_R2_F_L'_F'_R2_F'&amp;animtype=solve">F2 
+            L F' R2 F L' F' R2 F'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_RDB)&amp;alg=D'_F'_D_B'_D'_F_D_B&amp;animtype=solve">D' 
+            F' D B' D' F D B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_BLU)&amp;alg=L2_D'_L'_U2_L_D_L'_U2_L'&amp;animtype=solve">L2 
+            D' L' U2 L D L' U2 L'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_BRD)&amp;alg=F'_U_F_D'_F'_U'_F_D&amp;animtype=solve">F' 
+            U F D' F' U' F D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_BDL)&amp;alg=U_R_B2_R'_F'_R_B2_R'_F_U'&amp;animtype=solve">U 
+            R B2 R' F' R B2 R' F U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_LUB)&amp;alg=L_F2_L'_B_L_F2_L'_B'&amp;animtype=solve">L 
+            F2 L' B L F2 L' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_LFU)&amp;alg=F2_L'_B_L_F2_L'_B'_L&amp;animtype=solve">F2 
+            L' B L F2 L' B' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_LBD)&amp;alg=F'_U_F_D2_F'_U'_F_D2&amp;animtype=solve">F' 
+            U F D2 F' U' F D2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_LDF)&amp;alg=L'_F2_L'_B_L_F2_L'_B'_L2&amp;animtype=solve">L' 
+            F2 L' B L F2 L' B' L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_DFL)&amp;alg=F_D'_B2_D_F'_D'_B2_D&amp;animtype=solve">F 
+            D' B2 D F' D' B2 D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_DLB)&amp;alg=B2_U_F'_U'_B2_U_F_U'&amp;animtype=solve">B2 
+            U F' U' B2 U F U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RFD DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RFD_DBR)&amp;alg=F'_U_R2_U'_F_U_F'_R2_F_U'&amp;animtype=solve">F' 
+            U R2 U' F U F' R2 F U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_UBL)&amp;alg=U_R_D_R'_U'_R_D'_R'&amp;animtype=solve">U 
+            R D R' U' R D' R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_ULF)&amp;alg=U2_R_D_R'_U2_R_D'_R'&amp;animtype=solve">U2 
+            R D R' U2 R D' R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_UFR)&amp;alg=U'_R_D_R'_U_R_D'_R'&amp;animtype=solve">U' 
+            R D R' U R D' R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_FUL)&amp;alg=R'_F_R_B_R'_F'_R_B'&amp;animtype=solve">R' 
+            F R B R' F' R B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_FRU)&amp;alg=U_F_U'_B_U_F'_U'_B'&amp;animtype=solve">U 
+            F U' B U F' U' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_FLD)&amp;alg=R'_F2_R_B_R'_F2_R_B'&amp;animtype=solve">R' 
+            F2 R B R' F2 R B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_FDR)&amp;alg=R'_U'_R_D_R'_U_R_D'&amp;animtype=solve">R' 
+            U' R D R' U R D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_RUF)&amp;alg=F2_D2_F_U2_F'_D2_F_U2_F&amp;animtype=solve">F2 
+            D2 F U2 F' D2 F U2 F</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_RFD)&amp;alg=U_F'_U'_B_U_F_U'_B'&amp;animtype=solve">U 
+            F' U' B U F U' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_BLU)&amp;alg=R_B2_R_F_R'_B2_R_F'_R2&amp;animtype=solve">R 
+            B2 R F R' B2 R F' R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_BDL)&amp;alg=R'_U'_R_D'_R'_U_R_D&amp;animtype=solve">R' 
+            U' R D' R' U R D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_LUB)&amp;alg=U2_R2_U_L_U'_R2_U_L'_U&amp;animtype=solve">U2 
+            R2 U L U' R2 U L' U</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_LFU)&amp;alg=B'_R_F2_R'_B_R_F2_R'&amp;animtype=solve">B' 
+            R F2 R' B R F2 R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_LBD)&amp;alg=R2_F'_R_B2_R'_F_R_B2_R&amp;animtype=solve">R2 
+            F' R B2 R' F R B2 R</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_LDF)&amp;alg=R'_U'_R_D2_R'_U_R_D2&amp;animtype=solve">R' 
+            U' R D2 R' U R D2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_DFL)&amp;alg=U_F2_U'_B_U_F2_U'_B'&amp;animtype=solve">U 
+            F2 U' B U F2 U' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_DRF)&amp;alg=F_D2_F_U2_F'_D2_F_U2_F2&amp;animtype=solve">F 
+            D2 F U2 F' D2 F U2 F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB RDB DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_RDB_DLB)&amp;alg=R2_D2_R_U_R'_D2_R_U'_R&amp;animtype=solve">R2 
+            D2 R U R' D2 R U' R</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_ULF)&amp;alg=R2_F2_R'_B2_R_F2_R'_B2_R'&amp;animtype=solve">R2 
+            F2 R' B2 R F2 R' B2 R'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_UFR)&amp;alg=R2_D'_R_U2_R'_D_R_U2_R&amp;animtype=solve">R2 
+            D' R U2 R' D R U2 R</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_FUL)&amp;alg=R'_F_U2_F'_R_F_R'_U2_R_F'&amp;animtype=solve">R' 
+            F U2 F' R F R' U2 R F'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_FRU)&amp;alg=L'_B2_L'_F2_L_B2_L'_F2_L2&amp;animtype=solve">L' 
+            B2 L' F2 L B2 L' F2 L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_FLD)&amp;alg=U_B_U2_B_D'_B'_U2_B_D_B2_U'&amp;animtype=solve">U 
+            B U2 B D' B' U2 B D B2 U'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_FDR)&amp;alg=L'_B2_L'_F_L_B2_L'_F'_L2&amp;animtype=solve">L' 
+            B2 L' F L B2 L' F' L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_RUF)&amp;alg=F'_L_U2_L'_F_L_F'_U2_F_L'&amp;animtype=solve">F' 
+            L U2 L' F L F' U2 F L'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_RFD)&amp;alg=L_U2_L_D'_L'_U2_L_D_L2&amp;animtype=solve">L 
+            U2 L D' L' U2 L D L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_RDB)&amp;alg=R2_F_R'_B2_R_F'_R'_B2_R'&amp;animtype=solve">R2 
+            F R' B2 R F' R' B2 R'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_BRD)&amp;alg=L_U2_L_D2_L'_U2_L_D2_L2&amp;animtype=solve">L 
+            U2 L D2 L' U2 L D2 L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_BDL)&amp;alg=L'_B2_L'_F'_L_B2_L'_F_L2&amp;animtype=solve">L' 
+            B2 L' F' L B2 L' F L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_LFU)&amp;alg=L_U2_L_D_L'_U2_L_D'_L2&amp;animtype=solve">L 
+            U2 L D L' U2 L D' L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_LBD)&amp;alg=R_D'_B2_D_R'_D'_R_B2_R'_D&amp;animtype=solve">R 
+            D' B2 D R' D' R B2 R' D</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_LDF)&amp;alg=R2_F'_R'_B2_R_F_R'_B2_R'&amp;animtype=solve">R2 
+            F' R' B2 R F R' B2 R'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_DFL)&amp;alg=R2_D_R_U2_R'_D'_R_U2_R&amp;animtype=solve">R2 
+            D R U2 R' D' R U2 R</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_DRF)&amp;alg=U2_L2_D2_L_U2_L'_D2_L_U2_L_U2&amp;animtype=solve">U2 
+            L2 D2 L U2 L' D2 L U2 L U2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_DLB)&amp;alg=R2_D2_R_U2_R'_D2_R_U2_R&amp;animtype=solve">R2 
+            D2 R U2 R' D2 R U2 R</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BLU DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BLU_DBR)&amp;alg=D_L'_B2_L_D'_L'_D_B2_D'_L&amp;animtype=solve">D 
+            L' B2 L D' L' D B2 D' L</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_UBL)&amp;alg=U_B'_D'_B_U'_B'_D_B&amp;animtype=solve">U 
+            B' D' B U' B' D B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_ULF)&amp;alg=U2_B'_D'_B_U2_B'_D_B&amp;animtype=solve">U2 
+            B' D' B U2 B' D B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_UFR)&amp;alg=U'_B'_D'_B_U_B'_D_B&amp;animtype=solve">U' 
+            B' D' B U B' D B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_FUL)&amp;alg=R_B'_L2_B_R'_B'_L2_B&amp;animtype=solve">R 
+            B' L2 B R' B' L2 B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_FRU)&amp;alg=U2_B2_U'_F'_U_B2_U'_F_U'&amp;animtype=solve">U2 
+            B2 U' F' U B2 U' F U'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_FLD)&amp;alg=D2_L'_U2_L_D2_L'_U2_L&amp;animtype=solve">D2 
+            L' U2 L D2 L' U2 L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_FDR)&amp;alg=B2_L_B'_R2_B_L'_B'_R2_B'&amp;animtype=solve">B2 
+            L B' R2 B L' B' R2 B'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_RUF)&amp;alg=B'_R2_B'_L'_B_R2_B'_L_B2&amp;animtype=solve">B' 
+            R2 B' L' B R2 B' L B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_RFD)&amp;alg=D'_F'_U_F_D_F'_U'_F&amp;animtype=solve">D' 
+            F' U F D F' U' F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_BLU)&amp;alg=L2_D2_L'_U2_L_D2_L'_U2_L'&amp;animtype=solve">L2 
+            D2 L' U2 L D2 L' U2 L'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_BDL)&amp;alg=U'_L_U_R'_U'_L'_U_R&amp;animtype=solve">U' 
+            L U R' U' L' U R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_LUB)&amp;alg=U'_L'_U_R'_U'_L_U_R&amp;animtype=solve">U' 
+            L' U R' U' L U R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_LFU)&amp;alg=R_D_L2_D'_R'_D_L2_D'&amp;animtype=solve">R 
+            D L2 D' R' D L2 D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_LBD)&amp;alg=R_B'_L'_B_R'_B'_L_B&amp;animtype=solve">R 
+            B' L' B R' B' L B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_LDF)&amp;alg=B_L2_B'_R'_B_L2_B'_R&amp;animtype=solve">B 
+            L2 B' R' B L2 B' R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_DFL)&amp;alg=U'_L2_U_R'_U'_L2_U_R&amp;animtype=solve">U' 
+            L2 U R' U' L2 U R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_DRF)&amp;alg=D'_F_D'_B2_D_F'_D'_B2_D2&amp;animtype=solve">D' 
+            F D' B2 D F' D' B2 D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BRD DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BRD_DLB)&amp;alg=L'_D2_L'_U2_L_D2_L'_U2_L2&amp;animtype=solve">L' 
+            D2 L' U2 L D2 L' U2 L2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_UBL)&amp;alg=L_B'_R'_B_L'_B'_R_B&amp;animtype=solve">L 
+            B' R' B L' B' R B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_ULF)&amp;alg=F'_D_F_U2_F'_D'_F_U2&amp;animtype=solve">F' 
+            D F U2 F' D' F U2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_UFR)&amp;alg=R'_D2_R_U_R'_D2_R_U'&amp;animtype=solve">R' 
+            D2 R U R' D2 R U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_FUL)&amp;alg=L2_F_R'_F'_L2_F_R_F'&amp;animtype=solve">L2 
+            F R' F' L2 F R F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_FRU)&amp;alg=R_U'_L_U_R'_U'_L'_U&amp;animtype=solve">R 
+            U' L U R' U' L' U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_FLD)&amp;alg=F_L2_F_R'_F'_L2_F_R_F2&amp;animtype=solve">F 
+            L2 F R' F' L2 F R F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_FDR)&amp;alg=L_U'_L'_D2_L_U_L'_D2&amp;animtype=solve">L 
+            U' L' D2 L U L' D2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_RUF)&amp;alg=F2_D_F_U2_F'_D'_F_U2_F&amp;animtype=solve">F2 
+            D F U2 F' D' F U2 F</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_RFD)&amp;alg=U_F'_R_B2_R'_F_R_B2_R'_U'&amp;animtype=solve">U 
+            F' R B2 R' F R B2 R' U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_RDB)&amp;alg=D'_R'_U'_R_D_R'_U_R&amp;animtype=solve">D' 
+            R' U' R D R' U R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_BLU)&amp;alg=L2_F'_L_B2_L'_F_L_B2_L&amp;animtype=solve">L2 
+            F' L B2 L' F L B2 L</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_BRD)&amp;alg=R'_U'_L_U_R_U'_L'_U&amp;animtype=solve">R' 
+            U' L U R U' L' U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_LUB)&amp;alg=U_B2_U_F_U'_B2_U_F'_U2&amp;animtype=solve">U 
+            B2 U F U' B2 U F' U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_LFU)&amp;alg=U_L'_F2_L_B_L'_F2_L_B'_U'&amp;animtype=solve">U 
+            L' F2 L B L' F2 L B' U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_LDF)&amp;alg=D_F_U2_F'_D'_F_U2_F'&amp;animtype=solve">D 
+            F U2 F' D' F U2 F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_DFL)&amp;alg=L'_D_R2_D'_L_D_R2_D'&amp;animtype=solve">L' 
+            D R2 D' L D R2 D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_DRF)&amp;alg=R2_U'_L_U_R2_U'_L'_U&amp;animtype=solve">R2 
+            U' L U R2 U' L' U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB BDL DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_BDL_DBR)&amp;alg=L_U'_B2_U_L'_U'_L_B2_L'_U&amp;animtype=solve">L 
+            U' B2 U L' U' L B2 L' U</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_ULF)&amp;alg=F'_L2_F'_R2_F_L2_F'_R2_F2&amp;animtype=solve">F' 
+            L2 F' R2 F L2 F' R2 F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_UFR)&amp;alg=R'_F'_R_B'_R'_F_R_B&amp;animtype=solve">R' 
+            F' R B' R' F R B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_FUL)&amp;alg=R'_F_R_B'_R'_F'_R_B&amp;animtype=solve">R' 
+            F R B' R' F' R B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_FRU)&amp;alg=U_F_U'_B'_U_F'_U'_B&amp;animtype=solve">U 
+            F U' B' U F' U' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_FLD)&amp;alg=R'_F2_R_B'_R'_F2_R_B&amp;animtype=solve">R' 
+            F2 R B' R' F2 R B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_FDR)&amp;alg=B_U'_F2_U_B'_U'_F2_U&amp;animtype=solve">B 
+            U' F2 U B' U' F2 U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_RUF)&amp;alg=F2_L2_F'_R2_F_L2_F'_R2_F'&amp;animtype=solve">F2 
+            L2 F' R2 F L2 F' R2 F'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_RFD)&amp;alg=U_F'_U'_B'_U_F_U'_B&amp;animtype=solve">U 
+            F' U' B' U F U' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_RDB)&amp;alg=U'_L_U'_R2_U_L'_U'_R2_U2&amp;animtype=solve">U' 
+            L U' R2 U L' U' R2 U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_BRD)&amp;alg=R'_U'_L'_U_R_U'_L_U&amp;animtype=solve">R' 
+            U' L' U R U' L U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_BDL)&amp;alg=U2_F_U'_B2_U_F'_U'_B2_U'&amp;animtype=solve">U2 
+            F U' B2 U F' U' B2 U'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_LFU)&amp;alg=U_R_U'_L'_U_R'_U'_L&amp;animtype=solve">U 
+            R U' L' U R' U' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_LBD)&amp;alg=U_R_U'_L_U_R'_U'_L'&amp;animtype=solve">U 
+            R U' L U R' U' L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_LDF)&amp;alg=U_R_U'_L2_U_R'_U'_L2&amp;animtype=solve">U 
+            R U' L2 U R' U' L2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_DFL)&amp;alg=U_F2_U'_B'_U_F2_U'_B&amp;animtype=solve">U 
+            F2 U' B' U F2 U' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_DRF)&amp;alg=R2_U'_L'_U_R2_U'_L_U&amp;animtype=solve">R2 
+            U' L' U R2 U' L U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_DLB)&amp;alg=U2_L2_U'_R'_U_L2_U'_R_U'&amp;animtype=solve">U2 
+            L2 U' R' U L2 U' R U'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LUB DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LUB_DBR)&amp;alg=U'_B2_U'_F'_U_B2_U'_F_U2&amp;animtype=solve">U' 
+            B2 U' F' U B2 U' F U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_UBL)&amp;alg=B'_U2_B'_D'_B_U2_B'_D_B2&amp;animtype=solve">B' 
+            U2 B' D' B U2 B' D B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_UFR)&amp;alg=F_R_B_R'_F'_R_B'_R'&amp;animtype=solve">F 
+            R B R' F' R B' R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_FRU)&amp;alg=R_B_L'_B'_R'_B_L_B'&amp;animtype=solve">R 
+            B L' B' R' B L B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_FLD)&amp;alg=D'_L2_D'_R_D_L2_D'_R'_D2&amp;animtype=solve">D' 
+            L2 D' R D L2 D' R' D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_FDR)&amp;alg=U_F_L2_F'_R'_F_L2_F'_R_U'&amp;animtype=solve">U 
+            F L2 F' R' F L2 F' R U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_RUF)&amp;alg=L'_B_U2_B'_L_B_L'_U2_L_B'&amp;animtype=solve">L' 
+            B U2 B' L B L' U2 L B'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_RFD)&amp;alg=L'_B_L_F2_L'_B'_L_F2&amp;animtype=solve">L' 
+            B L F2 L' B' L F2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_RDB)&amp;alg=R_F2_R'_B'_R_F2_R'_B&amp;animtype=solve">R 
+            F2 R' B' R F2 R' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_BLU)&amp;alg=L2_D_L'_U2_L_D'_L'_U2_L'&amp;animtype=solve">L2 
+            D L' U2 L D' L' U2 L'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_BRD)&amp;alg=R'_B_L'_B'_R_B_L_B'&amp;animtype=solve">R' 
+            B L' B' R B L B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_BDL)&amp;alg=U_B_L'_F2_L_B'_L'_F2_L_U'&amp;animtype=solve">U 
+            B L' F2 L B' L' F2 L U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_LUB)&amp;alg=U'_F'_U_B_U'_F_U_B'&amp;animtype=solve">U' 
+            F' U B U' F U B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_LBD)&amp;alg=L2_D'_R_D_L2_D'_R'_D&amp;animtype=solve">L2 
+            D' R D L2 D' R' D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_LDF)&amp;alg=L_F'_R2_F_L'_F'_R2_F&amp;animtype=solve">L 
+            F' R2 F L' F' R2 F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_DFL)&amp;alg=F'_D'_B2_D_F_D'_B2_D&amp;animtype=solve">F' 
+            D' B2 D F D' B2 D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_DRF)&amp;alg=R2_B_L'_B'_R2_B_L_B'&amp;animtype=solve">R2 
+            B L' B' R2 B L B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_DLB)&amp;alg=D_F'_D'_B2_D_F_D'_B2&amp;animtype=solve">D 
+            F' D' B2 D F D' B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LFU DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LFU_DBR)&amp;alg=D2_F'_D'_B2_D_F_D'_B2_D'&amp;animtype=solve">D2 
+            F' D' B2 D F D' B2 D'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_UBL)&amp;alg=U_R_D'_R'_U'_R_D_R'&amp;animtype=solve">U 
+            R D' R' U' R D R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_ULF)&amp;alg=U2_R_D'_R'_U2_R_D_R'&amp;animtype=solve">U2 
+            R D' R' U2 R D R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_UFR)&amp;alg=U'_R_D'_R'_U_R_D_R'&amp;animtype=solve">U' 
+            R D' R' U R D R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_FUL)&amp;alg=U_B_R2_B'_L'_B_R2_B'_L_U'&amp;animtype=solve">U 
+            B R2 B' L' B R2 B' L U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_FRU)&amp;alg=U_L2_U'_R'_U_L2_U'_R&amp;animtype=solve">U 
+            L2 U' R' U L2 U' R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_FLD)&amp;alg=D_L'_U2_L_D'_L'_U2_L&amp;animtype=solve">D 
+            L' U2 L D' L' U2 L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_FDR)&amp;alg=U_R_F'_L2_F_R'_F'_L2_F_U'&amp;animtype=solve">U 
+            R F' L2 F R' F' L2 F U'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Orthogonals</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_RUF)&amp;alg=F2_L'_F'_R2_F_L_F'_R2_F'&amp;animtype=solve">F2 
+            L' F' R2 F L F' R2 F'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_RFD)&amp;alg=D2_F'_U_F_D2_F'_U'_F&amp;animtype=solve">D2 
+            F' U F D2 F' U' F</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_RDB)&amp;alg=R'_B2_R'_F'_R_B2_R'_F_R2&amp;animtype=solve">R' 
+            B2 R' F' R B2 R' F R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_BLU)&amp;alg=D'_R_B2_R'_D_R_D'_B2_D_R'&amp;animtype=solve">D' 
+            R B2 R' D R D' B2 D R'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_BRD)&amp;alg=D'_B_U_B'_D_B_U'_B'&amp;animtype=solve">D' 
+            B U B' D B U' B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_LUB)&amp;alg=D'_R_D_L'_D'_R'_D_L&amp;animtype=solve">D' 
+            R D L' D' R' D L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_LFU)&amp;alg=D'_R_D_L2_D'_R'_D_L2&amp;animtype=solve">D' 
+            R D L2 D' R' D L2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_LDF)&amp;alg=D'_R_D_L_D'_R'_D_L'&amp;animtype=solve">D' 
+            R D L D' R' D L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_DFL)&amp;alg=F'_D2_F'_U_F_D2_F'_U'_F2&amp;animtype=solve">F' 
+            D2 F' U F D2 F' U' F2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_DRF)&amp;alg=F_L'_F'_R2_F_L_F'_R2&amp;animtype=solve">F 
+            L' F' R2 F L F' R2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LBD DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LBD_DBR)&amp;alg=D2_F_D'_B2_D_F'_D'_B2_D'&amp;animtype=solve">D2 
+            F D' B2 D F' D' B2 D'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_UBL)&amp;alg=U_B'_D2_B_U'_B'_D2_B&amp;animtype=solve">U 
+            B' D2 B U' B' D2 B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_ULF)&amp;alg=U2_B'_D2_B_U2_B'_D2_B&amp;animtype=solve">U2 
+            B' D2 B U2 B' D2 B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_UFR)&amp;alg=U'_B'_D2_B_U_B'_D2_B&amp;animtype=solve">U' 
+            B' D2 B U B' D2 B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_FUL)&amp;alg=D2_B'_D'_F2_D_B_D'_F2_D'&amp;animtype=solve">D2 
+            B' D' F2 D B D' F2 D'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_FRU)&amp;alg=U_L'_U'_R'_U_L_U'_R&amp;animtype=solve">U 
+            L' U' R' U L U' R</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_FDR)&amp;alg=F_U2_F'_D'_F_U2_F'_D&amp;animtype=solve">F 
+            U2 F' D' F U2 F' D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_RUF)&amp;alg=U2_B2_D2_B_U2_B'_D2_B_U2_B_U2&amp;animtype=solve">U2 
+            B2 D2 B U2 B' D2 B U2 B U2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_RFD)&amp;alg=L2_B_L_F2_L'_B'_L_F2_L&amp;animtype=solve">L2 
+            B L F2 L' B' L F2 L</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_RDB)&amp;alg=F_U2_F'_D2_F_U2_F'_D2&amp;animtype=solve">F 
+            U2 F' D2 F U2 F' D2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_BLU)&amp;alg=R_B2_R_F'_R'_B2_R_F_R2&amp;animtype=solve">R 
+            B2 R F' R' B2 R F R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_BRD)&amp;alg=R'_B_L2_B'_R_B_L2_B'&amp;animtype=solve">R' 
+            B L2 B' R B L2 B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_BDL)&amp;alg=F_U2_F'_D_F_U2_F'_D'&amp;animtype=solve">F 
+            U2 F' D F U2 F' D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_LUB)&amp;alg=F'_R2_F_L2_F'_R2_F_L2&amp;animtype=solve">F' 
+            R2 F L2 F' R2 F L2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_LFU)&amp;alg=F'_R2_F_L_F'_R2_F_L'&amp;animtype=solve">F' 
+            R2 F L F' R2 F L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_LBD)&amp;alg=F'_R2_F_L'_F'_R2_F_L&amp;animtype=solve">F' 
+            R2 F L' F' R2 F L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_DRF)&amp;alg=R2_B_L2_B'_R2_B_L2_B'&amp;animtype=solve">R2 
+            B L2 B' R2 B L2 B'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_DLB)&amp;alg=U_B_D2_B_U'_B'_D2_B_U_B2_U'&amp;animtype=solve">U 
+            B D2 B U' B' D2 B U B2 U'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB LDF DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_LDF_DBR)&amp;alg=U'_B2_U'_F_U_B2_U'_F'_U2&amp;animtype=solve">U' 
+            B2 U' F U B2 U' F' U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_UBL)&amp;alg=D_R2_D'_L2_D_R2_D'_L2&amp;animtype=solve">D 
+            R2 D' L2 D R2 D' L2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_ULF)&amp;alg=R_U_L2_U_R'_U'_L2_U_R_U2_R'&amp;animtype=solve">R 
+            U L2 U R' U' L2 U R U2 R'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_UFR)&amp;alg=F2_R_B_R'_F2_R_B'_R'&amp;animtype=solve">F2 
+            R B R' F2 R B' R'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_FUL)&amp;alg=D_R2_D'_L_D_R2_D'_L'&amp;animtype=solve">D 
+            R2 D' L D R2 D' L'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_FRU)&amp;alg=R_U'_L2_U_R'_U'_L2_U&amp;animtype=solve">R 
+            U' L2 U R' U' L2 U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_FDR)&amp;alg=L2_U'_L'_D2_L_U_L'_D2_L'&amp;animtype=solve">L2 
+            U' L' D2 L U L' D2 L'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_RUF)&amp;alg=B_U2_B_D'_B'_U2_B_D_B2&amp;animtype=solve">B 
+            U2 B D' B' U2 B D B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_RFD)&amp;alg=D'_B2_D_F_D'_B2_D_F'&amp;animtype=solve">D' 
+            B2 D F D' B2 D F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_RDB)&amp;alg=R_F'_R'_B'_R_F_R'_B&amp;animtype=solve">R 
+            F' R' B' R F R' B</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_BLU)&amp;alg=R'_U2_R'_D_R_U2_R'_D'_R2&amp;animtype=solve">R' 
+            U2 R' D R U2 R' D' R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_BRD)&amp;alg=R'_U'_L2_U_R_U'_L2_U&amp;animtype=solve">R' 
+            U' L2 U R U' L2 U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_BDL)&amp;alg=D_R2_D'_L'_D_R2_D'_L&amp;animtype=solve">D 
+            R2 D' L' D R2 D' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_LUB)&amp;alg=B'_U_F2_U'_B_U_F2_U'&amp;animtype=solve">B' 
+            U F2 U' B U F2 U'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_LFU)&amp;alg=F_L'_B_L_F'_L'_B'_L&amp;animtype=solve">F 
+            L' B L F' L' B' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_LBD)&amp;alg=F2_U_F_D2_F'_U'_F_D2_F&amp;animtype=solve">F2 
+            U F D2 F' U' F D2 F</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_DRF)&amp;alg=R2_U'_L2_U_R2_U'_L2_U&amp;animtype=solve">R2 
+            U' L2 U R2 U' L2 U</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_DLB)&amp;alg=L'_F'_L_B2_L'_F_L_B2&amp;animtype=solve">L' 
+            F' L B2 L' F L B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DFL DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DFL_DBR)&amp;alg=R2_U2_L2_U_R2_U'_L2_U_R2_U_R2&amp;animtype=solve">R2 
+            U2 L2 U R2 U' L2 U R2 U R2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_UBL)&amp;alg=R2_D'_L2_D_R2_D'L2_D&amp;animtype=solve">R2 
+            D' L2 D R2 D' L2 D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_ULF)&amp;alg=U2_F_R2_F'_R2_F'_U2_F_R2_F_R2_F'&amp;animtype=solve">U2 
+            F R2 F' R2 F' U2 F R2 F R2 F'</A> (12 HTM)</FONT></TD>
+          <TD><FONT size=3>Per Special</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_UFR)&amp;alg=D2_B2_D_F2_D'_B2_D_F2_D&amp;animtype=solve">D2 
+            B2 D F2 D' B2 D F2 D</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_FUL)&amp;alg=R2_D'_L_D_R2_D'_L'_D&amp;animtype=solve">R2 
+            D' L D R2 D' L' D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_FRU)&amp;alg=U'_B_U'_F2_U_B'_U'_F2_U2&amp;animtype=solve">U' 
+            B U' F2 U B' U' F2 U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_FLD)&amp;alg=U2_R2_U2_R_D2_R'_U2_R_D2_R_U2&amp;animtype=solve">U2 
+            R2 U2 R D2 R' U2 R D2 R U2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_RUF)&amp;alg=B_U2_B_D2_B'_U2_B_D2_B2&amp;animtype=solve">B 
+            U2 B D2 B' U2 B D2 B2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_RDB)&amp;alg=F2_U2_F'_D2_F_U2_F'_D2_F'&amp;animtype=solve">F2 
+            U2 F' D2 F U2 F' D2 F'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_BLU)&amp;alg=U2_L'_U2_L'_D2_L_U2_L'_D2_L2_U2&amp;animtype=solve">U2 
+            L' U2 L' D2 L U2 L' D2 L2 U2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_BRD)&amp;alg=D2_B2_D_F_D'_B2_D_F'_D&amp;animtype=solve">D2 
+            B2 D F D' B2 D F' D</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_BDL)&amp;alg=U'_L_U_R2_U'_L'_U_R2&amp;animtype=solve">U' 
+            L U R2 U' L' U R2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_LUB)&amp;alg=U'_L'_U_R2_U'_L_U_R2&amp;animtype=solve">U' 
+            L' U R2 U' L U R2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_LFU)&amp;alg=B_L'_B'_R2_B_L_B'_R2&amp;animtype=solve">B 
+            L' B' R2 B L B' R2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_LBD)&amp;alg=R2_F_L'_F'_R2_F_L_F'&amp;animtype=solve">R2 
+            F L' F' R2 F L F'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_LDF)&amp;alg=R2_D'_L'_D_R2_D'_L_D&amp;animtype=solve">R2 
+            D' L' D R2 D' L D</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_DFL)&amp;alg=U'_L2_U_R2_U'_L2_U_R2&amp;animtype=solve">U' 
+            L2 U R2 U' L2 U R2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_DLB)&amp;alg=U_R2_U'_B2_U'_B2_U_B2_D_B2_D'_R2&amp;animtype=solve">U 
+            R2 U' B2 U' B2 U B2 D B2 D' R2</A> (12 HTM)</FONT></TD>
+          <TD><FONT size=3>Per Special</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DRF DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DRF_DBR)&amp;alg=U'_B2_U'_F2_U_B2_U'_F2_U2&amp;animtype=solve">U' 
+            B2 U' F2 U B2 U' F2 U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_UBL)&amp;alg=D2_R2_D'_L2_D_R2_D'_L2_D'&amp;animtype=solve">D2 
+            R2 D' L2 D R2 D' L2 D'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_ULF)&amp;alg=U_B2_U'_B2_U'_L2_U_B2_U_B2_U'_L2&amp;animtype=solve">U 
+            B2 U' B2 U' L2 U B2 U B2 U' L2</A> (12 HTM)</FONT></TD>
+          <TD><FONT size=3>Per Special</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_UFR)&amp;alg=R'_F'_R_B2_R'_F_R_B2&amp;animtype=solve">R' 
+            F' R B2 R' F R B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_FUL)&amp;alg=R'_F_R_B2_R'_F'_R_B2&amp;animtype=solve">R' 
+            F R B2 R' F' R B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_FRU)&amp;alg=U_F_U'_B2_U_F'_U'_B2&amp;animtype=solve">U 
+            F U' B2 U F' U' B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_FLD)&amp;alg=R'_F2_R_B2_R'_F2_R_B2&amp;animtype=solve">R' 
+            F2 R B2 R' F2 R B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_FDR)&amp;alg=B2_L'_F_L_B2_L'_F'_L&amp;animtype=solve">B2 
+            L' F L B2 L' F' L</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_RUF)&amp;alg=U_R_U2_R_D'_R'_U2_R_D_R2_U'&amp;animtype=solve">U 
+            R U2 R D' R' U2 R D R2 U'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_RFD)&amp;alg=U_F'_U'_B2_U_F_U'_B2&amp;animtype=solve">U 
+            F' U' B2 U F U' B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB RDB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_RDB)&amp;alg=R'_U_R'_D2_R_U'_R'_D2_R2&amp;animtype=solve">R' 
+            U R' D2 R U' R' D2 R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_BLU)&amp;alg=R'_U2_R'_D2_R_U2_R'_D2_R2&amp;animtype=solve">R' 
+            U2 R' D2 R U2 R' D2 R2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB BRD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_BRD)&amp;alg=L2_U2_L_D2_L'_U2_L_D2_L&amp;animtype=solve">L2 
+            U2 L D2 L' U2 L D2 L</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_LUB)&amp;alg=U_R'_U_L2_U'_R_U_L2_U2&amp;animtype=solve">U 
+            R' U L2 U' R U L2 U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_LFU)&amp;alg=B2_D_F'_D'_B2_D_F_D'&amp;animtype=solve">B2 
+            D F' D' B2 D F D'</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_LDF)&amp;alg=U_B2_U'_B'_D2_B_U_B'_D2_B'_U'&amp;animtype=solve">U 
+            B2 U' B' D2 B U B' D2 B' U'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_DFL)&amp;alg=U_F2_U'_B2_U_F2_U'_B2&amp;animtype=solve">U 
+            F2 U' B2 U F2 U' B2</A> (8 HTM)</FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_DRF)&amp;alg=U'_B2_U_R2_U_R2_U'_R2_D'_R2_D_B2&amp;animtype=solve">U' 
+            B2 U R2 U R2 U' R2 D' R2 D B2</A> (12 HTM)</FONT></TD>
+          <TD><FONT size=3>Per Special</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DLB DBR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DLB_DBR)&amp;alg=U_R2_U_L2_U'_R2_U_L2_U2&amp;animtype=solve">U 
+            R2 U L2 U' R2 U L2 U2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR UBL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_UBL)&amp;alg=D'_R2_D'_L2_D_R2_D'_L2_D2&amp;animtype=solve">D' 
+            R2 D' L2 D R2 D' L2 D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR ULF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_ULF)&amp;alg=R_B2_L'_B'_R2_B_L_B'_R2_B'_R'&amp;animtype=solve">R 
+            B2 L' B' R2 B L B' R2 B' R'</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR UFR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_UFR)&amp;alg=D_B2_D_F2_D'_B2_D_F2_D2&amp;animtype=solve">D 
+            B2 D F2 D' B2 D F2 D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR FUL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_FUL)&amp;alg=D'_R2_D'_L_D_R2_D'_L'_D2&amp;animtype=solve">D' 
+            R2 D' L D R2 D' L' D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR FRU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_FRU)&amp;alg=U2_L_U'_R2_U_L'_U'_R2_U'&amp;animtype=solve">U2 
+            L U' R2 U L' U' R2 U'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR FLD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_FLD)&amp;alg=U2_L'_U'_R2_U_L_U'_R2_U'&amp;animtype=solve">U2 
+            L' U' R2 U L U' R2 U'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR FDR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_FDR)&amp;alg=D'_R2_D'_L'_D_R2_D'_L_D2&amp;animtype=solve">D' 
+            R2 D' L' D R2 D' L D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR RUF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_RUF)&amp;alg=F_D'_R2_D_F'_D'_F_R2_F'_D&amp;animtype=solve">F 
+            D' R2 D F' D' F R2 F' D</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR RFD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_RFD)&amp;alg=U_F'_R2_F_U'_F'_U_R2_U'_F&amp;animtype=solve">U 
+            F' R2 F U' F' U R2 U' F</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR BLU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_BLU)&amp;alg=L'_D_B2_D'_L_D_L'_B2_L_D'&amp;animtype=solve">L' 
+            D B2 D' L D L' B2 L D'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR BDL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_BDL)&amp;alg=U'_L_B2_L'_U_L_U'_B2_U_L'&amp;animtype=solve">U' 
+            L B2 L' U L U' B2 U L'</A> (10 HTM)</FONT></TD>
+          <TD><FONT size=3>Cyclic Shift</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR LUB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_LUB)&amp;alg=U2_F'_U_B2_U'_F_U_B2_U&amp;animtype=solve">U2 
+            F' U B2 U' F U B2 U</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR LFU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_LFU)&amp;alg=D_B2_D_F'_D'_B2_D_F_D2&amp;animtype=solve">D 
+            B2 D F' D' B2 D F D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR LBD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_LBD)&amp;alg=D_B2_D_F_D'_B2_D_F'_D2&amp;animtype=solve">D 
+            B2 D F D' B2 D F' D2</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR LDF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_LDF)&amp;alg=U2_F_U_B2_U'_F'_U_B2_U&amp;animtype=solve">U2 
+            F U B2 U' F' U B2 U</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR DFL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_DFL)&amp;alg=R2_U'_R2_U'_L2_U_R2_U'_L2_U2_R2&amp;animtype=solve">R2 
+            U' R2 U' L2 U R2 U' L2 U2 R2</A> (11 HTM)</FONT></TD>
+          <TD><FONT size=3>Columns</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR DRF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_DRF)&amp;alg=U2_F2_U_B2_U'_F2_U_B2_U&amp;animtype=solve">U2 
+            F2 U B2 U' F2 U B2 U</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(URB DBR DLB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=BH_Corners_(URB_DBR_DLB)&amp;alg=U2_L2_U'_R2_U_L2_U'_R2_U'&amp;animtype=solve">U2 
+            L2 U' R2 U L2 U' R2 U'</A> (9 HTM)</FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR></TBODY></TABLE><!-- end of outer border color table --></TD></TR></TBODY></TABLE></CENTER>
+<HR>
+<FONT size=3>Go <A href="index.html">back</A>. 
+</FONT></BODY></HTML>

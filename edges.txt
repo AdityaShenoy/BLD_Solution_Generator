@@ -1,0 +1,2996 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://archive.garron.us/html/2009/bhedges.html -->
+<HTML><HEAD><TITLE>Beyer-Hardwick Edge Algorithms</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2900.5764" name=GENERATOR></HEAD>
+<BODY vLink=blue><FONT size=6>Beyer-Hardwick Edge Algorithms</FONT> 
+<HR>
+<FONT size=3>Hello and welcome to Daniel's and Chris' page about our jointly 
+created blind solving method. The method was created by Daniel Beyer and Chris 
+Hardwick to be used as an advanced method for solving any sized cube 
+blindfolded. This page is under construction, so please bear with us as we add 
+more material to this website.<BR><BR>This particular page is about solving 
+edges using the Beyer-Hardwick method. The goal is to use an optimal length, 
+supercube safe algorithm for all 3-cycles starting from a fixed buffer piece. 
+You perform sticker cycles, and will thus solve the position and orientation of 
+any given edge at the same time. The goal is to have a prepared algorithm for 
+every possible cycle, reducing the thinking time during solving. Other pages 
+will be devoted to how to figure out which type of algorithm to use given a 
+certain cycle. This is based on the case name for each algorithm. If you are 
+interested to learn the method, please continue to check back for further pages 
+explaining how to use the case names of each algorithm below.<BR><BR><FONT 
+size=3>The following are all algorithms necessary to use the Beyer-Hardwick 
+method for edges. Please bear in mind that there are often multiple algorithms 
+you could use for a certain case. The case name is more important for each 
+algorithm than the given algorithm. In later pages to follow you will see how to 
+use the case name for a certain cycle to construct the correct algorithm when 
+solving. We include at least one algorithm for each case merely for 
+completeness. In cases where there are more than one algorithm listed the 
+following notes must be made:<BR><BR>
+<LI>Algorithms followed by two asterisks are optimal length for supercube safe 
+solving. They will not affect any other unsolved pieces on any sized cube. 
+<LI>Algorithms followed by one asterisk are non-optimal length, supercube safe 
+algorithms. These tend to be easier to execute than the optimal version. 
+<LI>Algorithms not followed by any asterisk are not necessarily supercube safe, 
+and not necessarily optimal (STM or WTM) for 3x3x3 solving.<BR><BR><B>NOTE:</B> 
+It is very important to note that Daniel and I have taken special care to 
+optimize the supercube safe edge algorithms for use of BH on any odd sized cube. 
+In doing so we have optimized in another metric called WTM or Wide Turn Metric. 
+WTM is the same as STM or Slice Turn Metric only it includes the possibility of 
+turning double layers on 3x3x3 and multiple adjacent layers in the larger cubes. 
+Lower case letters are used in this page for double layer turns. For example the 
+turn <B>r</B> is done as <B>R M'</B> simultaneously.<BR><BR>For those learning 
+this method it is important to know that no special care has been taken to 
+optimize these algorithms for use on the 3x3x3. This may mean that the given 
+algorithm(s) is/are not optimal in STM for 3x3x3 edges; this is a possible 
+improvement to the BH method that we will explore at a later date. Anyone 
+interested in optimizing the 3x3x3 cases is certainly welcome to do so, and 
+please contact us if you would like us to update this page with your results 
+(with due credit given). The easiest or more trivial 3x3x3 cases have been 
+listed in addition to the optimal BH algorithm.</FONT><BR><BR>
+
+<FONT size=3>Many thanks to <A 
+href="http://cube.garron.us/">Lucas Garron</A> for coding this page to show an 
+applet for each algorithm. If you would like a printable version of this page <A 
+href="bhedges-printable.html" target="_new">click here</A>.</FONT><BR><BR>
+
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 bgColor=black border=0>
+  <TBODY>
+  <TR>
+    <TD><!-- first level, inside table -->
+      <TABLE cellSpacing=1 cellPadding=10 border=0>
+        <TBODY>
+        <TR bgColor=white>
+          <TD><FONT size=4><B>Cycle</B></FONT></TD>
+          <TD><FONT size=3><B>Algorithm (optimal length)</B></FONT></TD>
+          <TD><FONT size=3><B>Case Name</B></FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_UL)&amp;alg=B'_L'_E_L_U2_L'_E'_L_U2_B&amp;animtype=solve">B' 
+            L' E L U2 L' E' L U2 B</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_UL)&amp;alg=M2_U'_M'_U2_M_U2_M'_U2_M_U'_M2&amp;animtype=solve">M2 
+            U' M' U2 M U2 M' U2 M U' M2</A> (11 STM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_UL)&amp;alg=M2_U_M'_U2_M_U_M2&amp;animtype=solve">M2 
+            U M' U2 M U M2</A> (7 STM)</FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>Setup into SP9<BR>SP7 
+            for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_UF)&amp;alg=F'_R'_E_R_U_R'_E'_R_U'_F&amp;animtype=solve">F' 
+            R' E R U R' E' R U' F</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_UF)&amp;alg=y'_M2_U'_M'_U2_M_U2_M'_U2_M_U'_M2_y&amp;animtype=solve">y' 
+            M2 U' M' U2 M U2 M' U2 M U' M2 y</A> (11 STM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_UF)&amp;alg=y'_M2_U_M'_U2_M_U_M2_y&amp;animtype=solve">y' 
+            M2 U M' U2 M U M2 y</A> (7 STM)</FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>Setup into SP9<BR>SP7 
+            for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_FU)&amp;alg=M_F_R'_F'_M'_F_R_F'&amp;animtype=solve">M 
+            F R' F' M' F R F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_FL)&amp;alg=R_E2_R'_U_R_E2_R'_U'&amp;animtype=solve">R 
+            E2 R' U R E2 R' U'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_FL)&amp;alg=U'_B_E'_B'_U_B_E_B'&amp;animtype=solve">U' 
+            B E' B' U B E B'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_FR)&amp;alg=U'_B'_E_B_U_B'_E'_B&amp;animtype=solve">U' 
+            B' E B U B' E' B</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_FR)&amp;alg=F'_M_F_R'_F'_M'_F_R&amp;animtype=solve">F' 
+            M F R' F' M' F R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_FD)&amp;alg=S_D_S'_U_S_D'_S'_U'&amp;animtype=solve">S 
+            D S' U S D' S' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_RF)&amp;alg=U'_B_E2_B'_U_B_E2_B'&amp;animtype=solve">U' 
+            B E2 B' U B E2 B'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_RB)&amp;alg=U_F'_E2_F_U_F'_E2_F_U2&amp;animtype=solve">U 
+            F' E2 F U F' E2 F U2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_RB)&amp;alg=U2_L'_E_L_U_L'_E'_L_U&amp;animtype=solve">U2 
+            L' E L U L' E' L U</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_RD)&amp;alg=U'_M'_D_M_U_M'_D'_M&amp;animtype=solve">U' 
+            M' D M U M' D' M</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_RD)&amp;alg=R_E_R'_U_R_E'_R'_U'&amp;animtype=solve">R 
+            E R' U R E' R' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_BR)&amp;alg=U_F_E'_F'_U_F_E_F'_U2&amp;animtype=solve">U 
+            F E' F' U F E F' U2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_BR)&amp;alg=U2_L_E2_L'_U_L_E2_L'_U&amp;animtype=solve">U2 
+            L E2 L' U L E2 L' U</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_BL)&amp;alg=R'_E2_R_U_R'_E2_R_U'&amp;animtype=solve">R' 
+            E2 R U R' E2 R U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_BD)&amp;alg=U'_B_E_B'_U_B_E'_B'&amp;animtype=solve">U' 
+            B E B' U B E' B'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_BD)&amp;alg=M'_B_R_B'_M_B_R'_B'&amp;animtype=solve">M' 
+            B R B' M B R' B'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert<BR>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_LU)&amp;alg=L'_B_L_S'_L'_B'_L_S&amp;animtype=solve">L' 
+            B L S' L' B' L S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_LB)&amp;alg=B_L_S'_L'_B'_L_S_L'&amp;animtype=solve">B 
+            L S' L' B' L S L'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_LB)&amp;alg=R_E'_R'_U_R_E_R'_U'&amp;animtype=solve">R 
+            E' R' U R E R' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_LF)&amp;alg=U'_B'_E2_B_U_B'_E2_B&amp;animtype=solve">U' 
+            B' E2 B U B' E2 B</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_LF)&amp;alg=R'_E_R_U_R'_E'_R_U'&amp;animtype=solve">R' 
+            E R U R' E' R U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_LD)&amp;alg=U'_M'_D'_M_U_M'_D_M&amp;animtype=solve">U' 
+            M' D' M U M' D M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_DF)&amp;alg=M2_D_R2_D'_M2_D_R2_D'&amp;animtype=solve">M2 
+            D R2 D' M2 D R2 D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_DL)&amp;alg=D'_B2_D_S2_D'_B2_D_S2&amp;animtype=solve">D' 
+            B2 D S2 D' B2 D S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_DL)&amp;alg=R2_D'_M_U2_M'_D2_M_U2_M'_D'_R2&amp;animtype=solve">R2 
+            D' M U2 M' D2 M U2 M' D' R2</A> (11 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>Setup into B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_DR)&amp;alg=D'_M2_D_R2_D'_M2_D_R2&amp;animtype=solve">D' 
+            M2 D R2 D' M2 D R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UB DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UB_DB)&amp;alg=B2_D_S2_D'_B2_D_S2_D'&amp;animtype=solve">B2 
+            D S2 D' B2 D S2 D'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UB_DB)&amp;alg=D2_M2_D_R2_D'_M2_D_R2_D&amp;animtype=solve">D2 
+            M2 D R2 D' M2 D R2 D</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_UB)&amp;alg=B_R_E'_R'_U2_R_E_R'_U2_B'&amp;animtype=solve">B 
+            R E' R' U2 R E R' U2 B'</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_UB)&amp;alg=M2_U_M'_U2_M_U2_M'_U2_M_U_M2&amp;animtype=solve">M2 
+            U M' U2 M U2 M' U2 M U M2</A> (11 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>Setup into 
+          SP9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_UF)&amp;alg=F'_R'_E_R_U2_R'_E'_R_U2_F&amp;animtype=solve">F' 
+            R' E R U2 R' E' R U2 F</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_UF)&amp;alg=F_U2_L_E'_L'_U2_L_E_L'_F'&amp;animtype=solve">F 
+            U2 L E' L' U2 L E L' F'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>Setup into Drop and 
+            Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_FU)&amp;alg=R'_F_R'_S2_R_F'_R'_S2_R2&amp;animtype=solve">R' 
+            F R' S2 R F' R' S2 R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_FL)&amp;alg=R_E2_R'_U2_R_E2_R'_U2&amp;animtype=solve">R 
+            E2 R' U2 R E2 R' U2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_FL)&amp;alg=S_R2_S'_L'_S_R2_S'_L&amp;animtype=solve">S 
+            R2 S' L' S R2 S' L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_FR)&amp;alg=U2_L'_E2_L_U2_L'_E2_L&amp;animtype=solve">U2 
+            L' E2 L U2 L' E2 L</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_FR)&amp;alg=R_S'_L2_S_R'_S'_L2_S&amp;animtype=solve">R 
+            S' L2 S R' S' L2 S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_FD)&amp;alg=S_D_S'_U2_S_D'_S'_U2&amp;animtype=solve">S 
+            D S' U2 S D' S' U2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_FD)&amp;alg=L2_S2_L'_F_L_S2_L'_F'_L'&amp;animtype=solve">L2 
+            S2 L' F L S2 L' F' L'</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_RF)&amp;alg=U2_L_E'_L'_U2_L_E_L'&amp;animtype=solve">U2 
+            L E' L' U2 L E L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_RB)&amp;alg=U2_L'_E_L_U2_L'_E'_L&amp;animtype=solve">U2 
+            L' E L U2 L' E' L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_RD)&amp;alg=R'_E'_R_U2_R'_E_R_U2&amp;animtype=solve">R' 
+            E' R U2 R' E R U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_BU)&amp;alg=R_B'_R_S2_R'_B_R_S2_R2&amp;animtype=solve">R 
+            B' R S2 R' B R S2 R2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_BU)&amp;alg=L2_S2_L_B_L'_S2_L_B'_L&amp;animtype=solve">L2 
+            S2 L B L' S2 L B' L</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_BR)&amp;alg=U2_L_E2_L'_U2_L_E2_L'&amp;animtype=solve">U2 
+            L E2 L' U2 L E2 L'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_BR)&amp;alg=R'_S'_L2_S_R_S'_L2_S&amp;animtype=solve">R' 
+            S' L2 S R S' L2 S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_BL)&amp;alg=R'_E2_R_U2_R'_E2_R_U2&amp;animtype=solve">R' 
+            E2 R U2 R' E2 R U2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_BL)&amp;alg=S_R2_S'_L_S_R2_S'_L'&amp;animtype=solve">S 
+            R2 S' L S R2 S' L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_BD)&amp;alg=S_D'_S'_U2__S_D_S'_U2&amp;animtype=solve">S 
+            D' S' U2 S D S' U2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_BD)&amp;alg=R_B_R_S2_R'_B'_R_S2_R2&amp;animtype=solve">R 
+            B R S2 R' B' R S2 R2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_LB)&amp;alg=R_E'_R'_U2_R_E_R'_U2&amp;animtype=solve">R 
+            E' R' U2 R E R' U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_LF)&amp;alg=R'_E_R_U2_R'_E'_R_U2&amp;animtype=solve">R' 
+            E R U2 R' E' R U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_LD)&amp;alg=U2_L_E_L'_U2_L_E'_L'&amp;animtype=solve">U2 
+            L E L' U2 L E' L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_DF)&amp;alg=U_M'_U2_M_U2_M'_U2_M_U&amp;animtype=solve">U 
+            M' U2 M U2 M' U2 M U</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_DF)&amp;alg=U_M_D2_M'_U2_M_D2_M'_U&amp;animtype=solve">U 
+            M D2 M' U2 M D2 M' U</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_DL)&amp;alg=y'_U2_M'_U2_M_U2_M'_U2_M_y&amp;animtype=solve">y' 
+            U2 M' U2 M U2 M' U2 M y</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_DL)&amp;alg=y'_M'_U2_M_U2_y&amp;animtype=solve">y' 
+            M' U2 M U2 y</A> (4 STM)</FONT></TD>
+          <TD><FONT size=3>Slice-Plane<BR>Half Slice-Plane for 
+3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_DR)&amp;alg=y_M'_U2_M_U2_M'_U2_M_U2_y'&amp;animtype=solve">y 
+            M' U2 M U2 M' U2 M U2 y'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_DR)&amp;alg=y_U2_M'_U2_M_y'&amp;animtype=solve">y 
+            U2 M' U2 M y'</A> (4 STM)</FONT></TD>
+          <TD><FONT size=3>Slice-Plane<BR>Half Slice-Plane for 
+3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UL DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UL_DB)&amp;alg=U'_M_U2_M'_U2_M_U2_M'_U'&amp;animtype=solve">U' 
+            M U2 M' U2 M U2 M' U'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UL_DB)&amp;alg=U_M_U2_M'_U&amp;animtype=solve">U 
+            M U2 M' U</A> (5 STM)</FONT></TD>
+          <TD><FONT size=3>SP9<BR>SP5 for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_UB)&amp;alg=F'_U_R'_E_R_U'_R'_E'_R_F&amp;animtype=solve">F' 
+            U R' E R U' R' E' R F</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_UL)&amp;alg=F_L_E'_L'_U2_L_E_L'_U2_F'&amp;animtype=solve">F 
+            L E' L' U2 L E L' U2 F'</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_UL)&amp;alg=M2_U'_M_U2_M'_U2_M_U2_M'_U'_M2&amp;animtype=solve">M2 
+            U' M U2 M' U2 M U2 M' U' M2</A> (11 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>Setup into 
+          SP9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_FL)&amp;alg=R_E2_R'_U'_R_E2_R'_U&amp;animtype=solve">R 
+            E2 R' U' R E2 R' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_FR)&amp;alg=U2_L'_E2_L_U'_L'_E2_L_U'&amp;animtype=solve">U2 
+            L' E2 L U' L' E2 L U'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_FR)&amp;alg=R2_B_M'_B'_R'_B_M_B'_R'&amp;animtype=solve">R2 
+            B M' B' R' B M B' R'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_FD)&amp;alg=U_F_E_F'_U'_F_E'_F'&amp;animtype=solve">U 
+            F E F' U' F E' F'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_FD)&amp;alg=S_D_S'_U'_S_D'_S'_U&amp;animtype=solve">S 
+            D S' U' S D' S' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert<BR>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_RF)&amp;alg=U2_L_E'_L'_U'_L_E_L'_U'&amp;animtype=solve">U2 
+            L E' L' U' L E L' U'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_RF)&amp;alg=F'_L'_S'_L_F'_L'_S_L_F2&amp;animtype=solve">F' 
+            L' S' L F' L' S L F2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_RB)&amp;alg=U_F'_E2_F_U'_F'_E2_F&amp;animtype=solve">U 
+            F' E2 F U' F' E2 F</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_RD)&amp;alg=R'_E'_R_U'_R'_E_R_U&amp;animtype=solve">R' 
+            E' R U' R' E R U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_BU)&amp;alg=M'_B'_R_B_M_B'_R'_B&amp;animtype=solve">M' 
+            B' R B M B' R' B</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_BR)&amp;alg=U_F_E'_F'_U'_F_E_F'&amp;animtype=solve">U 
+            F E' F' U' F E F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_BL)&amp;alg=R'_E2_R_U'_R'_E2_R_U&amp;animtype=solve">R' 
+            E2 R U' R' E2 R U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_BD)&amp;alg=S_D'_S_U'_S_D_S'_U&amp;animtype=solve">S 
+            D' S' U' S D S' U</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_BD)&amp;alg=B2_M'_B'_R_B_M_B'_R'_B'&amp;animtype=solve">B2 
+            M' B' R B M B' R' B'</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_LU)&amp;alg=L_F'_L'_S'_L_F_L'_S&amp;animtype=solve">L 
+            F' L' S' L F L' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_LB)&amp;alg=R_E'_R'_U'_R_E_R'_U&amp;animtype=solve">R 
+            E' R' U' R E R' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_LF)&amp;alg=R'_E_R_U'_R'_E'_R_U&amp;animtype=solve">R' 
+            E R U' R' E' R U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_LD)&amp;alg=U_M_D_M'_U'_M_D'_M'&amp;animtype=solve">U 
+            M D M' U' M D' M'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_DF)&amp;alg=U_M_D2_M'_U_M_D2_M'&amp;animtype=solve">U 
+            M D2 M' U' M D2 M'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_DL)&amp;alg=D_F2_D'_S2_D_F2_D'_S2&amp;animtype=solve">D 
+            F2 D' S2 D F2 D' S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_DL)&amp;alg=D'_M2_D'_R2_D_M2_D'_R2_D2&amp;animtype=solve">D' 
+            M2 D' R2 D M2 D' R2 D2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_DR)&amp;alg=D_M2_D'_R2_D_M2_D'_R2&amp;animtype=solve">D 
+            M2 D' R2 D M2 D' R2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_UF_DR)&amp;alg=S_D2_S'_U'_S_D2_S'_U&amp;animtype=solve">S 
+            D2 S' U' S D2 S' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR UF DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_UF_DB)&amp;alg=D'_R2_D_M2_D'_R2_D_M2&amp;animtype=solve">D' 
+            R2 D M2 D' R2 D M2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_UB)&amp;alg=F_R'_F'_M_F_R_F'_M'&amp;animtype=solve">F 
+            R' F' M F R F' M'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_UL)&amp;alg=R2_S2_R_F_R'_S2_R_F'_R&amp;animtype=solve">R2 
+            S2 R F R' S2 R F' R</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_FL)&amp;alg=F'_L_S2_L'_F_L_S2_L'_&amp;animtype=solve">F' 
+            L S2 L' F L S2 L' </A>(8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_FR)&amp;alg=R_B'_M2_B_R_B'_M2_B_R2&amp;animtype=solve">R 
+            B' M2 B R B' M2 B R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_FD)&amp;alg=F2_D_S_D'_F2_D_S'_D'&amp;animtype=solve">F2 
+            D S D' F2 D S' D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_RF)&amp;alg=F_U'_M2_U_R_U'_M2_U_R'_F'&amp;animtype=solve">F 
+            U' M2 U R U' M2 U R' F'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_RB)&amp;alg=B_F_R'_F'_M_F_R_F'_M'_B'&amp;animtype=solve">B 
+            F R' F' M F R F' M' B'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_RD)&amp;alg=D'_F2_D_S_D'_F2_D_S'&amp;animtype=solve">D' 
+            F2 D S D' F2 D S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_BU)&amp;alg=B2_M2_B_R_B'_M2_B_R'_B&amp;animtype=solve">B2 
+            M2 B R B' M2 B R' B</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_BR)&amp;alg=B'_M2_B_R_B'_M2_B_R'&amp;animtype=solve">B' 
+            M2 B R B' M2 B R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_BL)&amp;alg=L2_F'_L_S2_L'_F_L_S2_L&amp;animtype=solve">L2 
+            F' L S2 L' F L S2 L</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_BD)&amp;alg=F_R'_F'_M2_F_R_F'_M2&amp;animtype=solve">F 
+            R' F' M2 F R F' M2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FU_BD)&amp;alg=D2_F2_D_S_D'_F2_D_S'_D&amp;animtype=solve">D2 
+            F2 D S D' F2 D S' D</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_LU)&amp;alg=S_R'_F_R_S'_R'_F'_R&amp;animtype=solve">S 
+            R' F R S' R' F' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_LB)&amp;alg=r_E'_R'_U_R_E_R'_U'_M&amp;animtype=solve">r 
+            E' R' U R E R' U' M</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FU_LB)&amp;alg=F'_L'_U2_L_E_L'_U2_L_E'_F&amp;animtype=solve">F' 
+            L' U2 L E L' U2 L E' F</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide setup into Drop and Catch<BR>Setup into Toss 
+            Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_LF)&amp;alg=M'_R'_E_R_U_R'_E'_R_U'_M&amp;animtype=solve">M' 
+            R' E R U R' E' R U' M</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_LD)&amp;alg=D_F2_D_S_D'_F2_D_S'_D2&amp;animtype=solve">D 
+            F2 D S D' F2 D S' D2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_DF)&amp;alg=F_R'_F'_M'_F_R_F'_M&amp;animtype=solve">F 
+            R' F' M' F R F' M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_DL)&amp;alg=S2_R'_F_R_S2_R'F'_R&amp;animtype=solve">S2 
+            R' F R S2 R' F' R</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FU_DL)&amp;alg=D_M_D_R2_D'_M'_D_R2_D2&amp;animtype=solve">D 
+            M D R2 D' M' D R2 D2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_DR)&amp;alg=D'_M_D_R2_D'_M'_D_R2&amp;animtype=solve">D' 
+            M D R2 D' M' D R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FU DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FU_DB)&amp;alg=D2_M_D_R2_D'_M'_D_R2_D&amp;animtype=solve">D2 
+            M D R2 D' M' D R2 D</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_UB)&amp;alg=U_R_E2_R'_U'_R_E2_R'&amp;animtype=solve">U 
+            R E2 R' U' R E2 R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_UL)&amp;alg=U2_R_E2_R'_U2_R_E2_R'&amp;animtype=solve">U2 
+            R E2 R' U2 R E2 R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_UF)&amp;alg=U'_R_E2_R'_U_R_E2_R'&amp;animtype=solve">U' 
+            R E2 R' U R E2 R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_FU)&amp;alg=L_S2_L'_F'_L_S2_L'_F&amp;animtype=solve">L 
+            S2 L' F' L S2 L' F</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_FR)&amp;alg=E'_L2_E_R'_E'_L2_E_R&amp;animtype=solve">E' 
+            L2 E R' E' L2 E R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_FD)&amp;alg=L_S2_L'_F_L_S2_L'_F'&amp;animtype=solve">L 
+            S2 L' F L S2 L' F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_RF)&amp;alg=L'_U2_L_E'_L'_U2_L_E&amp;animtype=solve">L' 
+            U2 L E' L' U2 L E</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_RB)&amp;alg=L'_U2_L'_E_L_U2_L'_E'_L2&amp;animtype=solve">L' 
+            U2 L' E L U2 L' E' L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_RD)&amp;alg=S'_R'_F2_R_S_R'_F2_R&amp;animtype=solve">S' 
+            R' F2 R S R' F2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_BU)&amp;alg=F2_R'_F_M2_F'_R_F_M2_F&amp;animtype=solve">F2 
+            R' F M2 F' R F M2 F</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_BR)&amp;alg=L'_U2_L_E2_L'_U2_L_E2&amp;animtype=solve">L' 
+            U2 L E2 L' U2 L E2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_BL)&amp;alg=L'_S'_L2_S_L2_S'_L2_S_L'&amp;animtype=solve">L' 
+            S' L2 S L2 S' L2 S L'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FL_BL)&amp;alg=z_y_U'_M'_U2_M_U2_M'_U2_M_U'_y'_z'&amp;animtype=solve">z 
+            y U' M' U2 M U2 M' U2 M U' y' z'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>SP9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_BD)&amp;alg=U'_M_U'_L'_U_M'_U'_L_U2&amp;animtype=solve">U' 
+            M U' L' U M' U' L U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_LU)&amp;alg=S_R'_F2_R_S'_R'_F2_R&amp;animtype=solve">S 
+            R' F2 R S' R' F2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_LB)&amp;alg=L'_U2_L_E_L'_U2_L_E'&amp;animtype=solve">L' 
+            U2 L E L' U2 L E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_LD)&amp;alg=E2_R_E_L_E'_R'_E_L'_E&amp;animtype=solve">E2 
+            R E L E' R' E L' E</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_DF)&amp;alg=U'_M2_U'_L'_U_M2_U'_L_U2&amp;animtype=solve">U' 
+            M2 U' L' U M2 U' L U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_DL)&amp;alg=S2_R'_F2_R_S2_R'_F2_R&amp;animtype=solve">S2 
+            R' F2 R S2 R' F2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_DR)&amp;alg=R_E_R2_E'_R2_E_R2_E'_R&amp;animtype=solve">R 
+            E R2 E' R2 E R2 E' R</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FL_DR)&amp;alg=L'_y_M'_U2_M_U2_M'_U2_M_U2_y'_L&amp;animtype=solve">L' 
+            y M' U2 M U2 M' U2 M U2 y' L</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>Setup into Slice-Plane</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FL DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FL_DB)&amp;alg=U_M2_U_L'_U'_M2_U_L_U2&amp;animtype=solve">U 
+            M2 U L' U' M2 U L U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_UB)&amp;alg=R'_F'_M_F_R_F'_M'_F&amp;animtype=solve">R' 
+            F' M F R F' M' F</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_UL)&amp;alg=L'_E2_L_U2_L'_E2_L_U2&amp;animtype=solve">L' 
+            E2 L U2 L' E2 L U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_UF)&amp;alg=U_L'_E2_L_U_L'_E2_L_U2&amp;animtype=solve">U 
+            L' E2 L U L' E2 L U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_FU)&amp;alg=R_B'_M2_B_R_B'_M2_B_R2&amp;animtype=solve">R 
+            B' M2 B R B' M2 B R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_FL)&amp;alg=F2_L_S2_L'_F2_L_S2_L'&amp;animtype=solve">F2 
+            L S2 L' F2 L S2 L'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FR_FL)&amp;alg=L2_E2_L_U2_L'_E2_L_U2_L&amp;animtype=solve">L2 
+            E2 L U2 L' E2 L U2 L</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_FD)&amp;alg=U_M'_U'_R_U_M_U'_R'&amp;animtype=solve">U 
+            M' U' R U M U' R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_RB)&amp;alg=E_B_U'_B'_E'_B_U_B'&amp;animtype=solve">E 
+            B U' B' E' B U B'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FR_RB)&amp;alg=E'_F_U_F'_E'_F_U'_F'_E2&amp;animtype=solve">E' 
+            F U F' E' F U' F' E2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_RD)&amp;alg=D'_F_D_S_D'_F'_D_S'&amp;animtype=solve">D' 
+            F D S D' F' D S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_BU)&amp;alg=R'_F_M2_F'_R_F_M2_F'&amp;animtype=solve">R' 
+            F M2 F' R F M2 F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_BR)&amp;alg=U_R2_B_M'_B'_R2_B_M_B'_U'&amp;animtype=solve">U 
+            R2 B M' B' R2 B M B' U'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3><BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_BL)&amp;alg=E2_L_U2_L'_E2_L_U2_L'&amp;animtype=solve">E2 
+            L U2 L' E2 L U2 L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_BD)&amp;alg=U'_M_U_R_U'_M'_U_R'&amp;animtype=solve">U' 
+            M U R U' M' U R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_LU)&amp;alg=R'_E'_L_E_R_E'_L_'_E&amp;animtype=solve">R' 
+            E' L E R E' L' E</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_LB)&amp;alg=S'_L_S_R_S'_L'_S_R'&amp;animtype=solve">S' 
+            L S R S' L' S R'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FR_LB)&amp;alg=B2_E_B_U'_B'_E'_B_U_B&amp;animtype=solve">B2 
+            E B U' B' E' B U B</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_LF)&amp;alg=E'_F_U_F'_E_F_U'_F'&amp;animtype=solve">E' 
+            F U F' E F U' F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_LD)&amp;alg=R'_E'_L'_E_R_E'_L_E&amp;animtype=solve">R' 
+            E' L' E R E' L E</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_DF)&amp;alg=U'_M2_U_R_U'_M2_U_R'&amp;animtype=solve">U' 
+            M2 U R U' M2 U R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_DL)&amp;alg=L'_F2_L_S2_L'_F2_L_S2&amp;animtype=solve">L' 
+            F2 L S2 L' F2 L S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FR_DL)&amp;alg=L_E2_L_U2_L'_E2_L_U2_L2&amp;animtype=solve">L 
+            E2 L U2 L' E2 L U2 L2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_DR)&amp;alg=F_R2_U_M'_U'_R2_U_M_U'_F'&amp;animtype=solve">F 
+            R2 U M' U' R2 U M U' F'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FR DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FR_DB)&amp;alg=U_M2_U'_R_U_M2_U'_R'&amp;animtype=solve">U 
+            M2 U' R U M2 U' R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_UB)&amp;alg=U_S_D_S'_U'_S_D'_S'&amp;animtype=solve">U 
+            S D S' U' S D' S'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_UB)&amp;alg=F'_R'_F'_M_F_R_F'_M'_F2&amp;animtype=solve">F' 
+            R' F' M F R F' M' F2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_UL)&amp;alg=S'_D'_S_U2_S'_D_S_U2&amp;animtype=solve">S' 
+            D' S U2 S' D S U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_UF)&amp;alg=F_E_F'_U_F_E'_F'_U'&amp;animtype=solve">F 
+            E F' U F E' F' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_FU)&amp;alg=D_S_D'_F2_D_S'_D'_F2&amp;animtype=solve">D 
+            S D' F2 D S' D' F2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_FL)&amp;alg=F_L_S2_L'_F'_L_S2_L'&amp;animtype=solve">F 
+            L S2 L' F' L S2 L'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_FL)&amp;alg=U2_L'_U'_M'_U_L_U'_M_U'&amp;animtype=solve">U2 
+            L' U' M' U L U' M U'</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_FR)&amp;alg=R_U_M'_U'_R'_U_M_U'&amp;animtype=solve">R 
+            U M' U' R' U M U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_RF)&amp;alg=u_U_L'_U'_M'_U_L_U'_M_u'&amp;animtype=solve">u 
+            U L' U' M' U L U' M u'</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_RF)&amp;alg=D_S'_U_F'_U'_S_U_F_U'_D'&amp;animtype=solve">D 
+            S' U F' U' S U F U' D'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Wide setup into Toss Up<BR>Setup into Toss 
+          Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_RB)&amp;alg=E'_R_U_M'_U'_R'_U_M_u'&amp;animtype=solve">E' 
+            R U M' U' R' U M u'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_RB)&amp;alg=F'_E_B_U'_B'_E'_B_U_B'_F&amp;animtype=solve">F' 
+            E B U' B' E' B U B' F</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_RD)&amp;alg=M'_U_M_D'_M'_U'_M_D&amp;animtype=solve">M' 
+            U M D' M' U' M D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_BU)&amp;alg=M2_B'_R_B_M2_B'_R'_B&amp;animtype=solve">M2 
+            B' R B M2 B' R' B</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_BR)&amp;alg=R'_U_M'_U'_R_U_M_U'&amp;animtype=solve">R' 
+            U M' U' R U M U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_BL)&amp;alg=U2_L_U'_M'_U_L'_U'_M_U'&amp;animtype=solve">U2 
+            L U' M' U L' U' M U'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_BD)&amp;alg=M'_U_M_D2_M'_U_M_D2&amp;animtype=solve">M' 
+            U M D2 M' U' M D2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_LU)&amp;alg=S_R'_F'_R_S'_R'_F_R&amp;animtype=solve">S 
+            R' F' R S' R' F R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_LB)&amp;alg=r_E'_R'_U'_R_E_R'_U_M&amp;animtype=solve">r 
+            E' R' U' R E R' U M</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_LB)&amp;alg=E'_R'_U_M'_U'_R_U_M_U'_E&amp;animtype=solve">E' 
+            R' U M' U' R U M U' E</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_LF)&amp;alg=d_S_D'_F_D_S'_D'_F'_E'&amp;animtype=solve">d 
+            S D' F D S' D' F' E'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_LF)&amp;alg=u_U_L_U'_M'_U_L'_U'_M_u'&amp;animtype=solve">u 
+            U L U' M' U L' U' M u'</A> (10 WTM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_LF)&amp;alg=M'_R'_E_R_U'_R'_E'_R_U_M&amp;animtype=solve">M' 
+            R' E R U' R' E' R U M</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Wide setup into Toss Up<BR>Setup into 
+            Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_LD)&amp;alg=M'_U_M_D_M'_U'_M_D'&amp;animtype=solve">M' 
+            U M D M' U' M D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_DL)&amp;alg=S2_R'_F'_R_S2_R'_F_R&amp;animtype=solve">S2 
+            R' F' R S2 R' F R</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_FD_DL)&amp;alg=U2_L2_U'_M'_U_L2_U'_M_U'&amp;animtype=solve">U2 
+            L2 U' M' U L2 U' M U'</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_DR)&amp;alg=R2_U_M'_U'_R2_U_M_U'&amp;animtype=solve">R2 
+            U M' U' R2 U M U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR FD DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_FD_DB)&amp;alg=M_D'_R2_D_M'_D'_R2_D&amp;animtype=solve">M 
+            D' R2 D M' D' R2 D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_UB)&amp;alg=B_E2_B'_U'_B_E2_B'_U&amp;animtype=solve">B 
+            E2 B' U' B E2 B' U</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RF_UB)&amp;alg=U'_L_E'_L'_U'_L_E_L'_U2&amp;animtype=solve">U' 
+            L E' L' U' L E L' U2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_UL)&amp;alg=L_E'_L'_U2_L_E_L'_U2&amp;animtype=solve">L 
+            E' L' U2 L E L' U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_UF)&amp;alg=U_L_E'_L'_U_L_E_L'_U2&amp;animtype=solve">U 
+            L E' L' U L E L' U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_FU)&amp;alg=F'_R_E2_R'_U'_R_E2_R'_U_F&amp;animtype=solve">F' 
+            R E2 R' U' R E2 R' U F</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_FL)&amp;alg=F'_U_F_E_F'_U'_F_E'&amp;animtype=solve">F' 
+            U F E F' U' F E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_FD)&amp;alg=D_S'_U_F'_U'_S_U_F_U'_D'&amp;animtype=solve">D 
+            S' U F' U' S U F U' D'</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RF_FD)&amp;alg=u_M'_U_L'_U'_M_U_L_U'_u'&amp;animtype=solve">u 
+            M' U L' U' M U L U' u'</A> (10 WTM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up<BR>Wide setup into Toss 
+          Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_RB)&amp;alg=F'_U_F'_E2_F_U'_F'_E2_F2&amp;animtype=solve">F' 
+            U F' E2 F U' F' E2 F2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_RD)&amp;alg=S'_U_F'_U'_S_U_F_U'&amp;animtype=solve">S' 
+            U F' U' S U F U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_BU)&amp;alg=f'_F'_L_F_M_F'_L'_F_M'_f&amp;animtype=solve">f' 
+            F' L F M F' L' F M' f</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RF_BU)&amp;alg=f_U2_M'_U'_R2_U_M_U'_R2_U'_f'&amp;animtype=solve">f 
+            U2 M' U' R2 U M U' R2 U' f'</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RF_BU)&amp;alg=S_F'_M_F_R_F'_M'_F_R'_S'&amp;animtype=solve">S 
+            F' M F R F' M' F R' S'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Wide setup into Toss Up<BR>Wide setup into Drop and 
+            Catch<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_BR)&amp;alg=F'_U_F_E'_F'_U'_F_E&amp;animtype=solve">F' 
+            U F E' F' U' F E</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_BL)&amp;alg=L2_E'_L'_U2_L_E_L'_U2_L'&amp;animtype=solve">L2 
+            E' L' U2 L E L' U2 L'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_BD)&amp;alg=S_R_F_M'_F'_R'_F_M_f'&amp;animtype=solve">S 
+            R F M' F' R' F M f'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RF_BD)&amp;alg=F_D_R2_D'_M'_D_R2_D'_M_F'&amp;animtype=solve">F 
+            D R2 D' M' D R2 D' M F'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_LU)&amp;alg=S_U_F'_U'_S'_U_F_U'&amp;animtype=solve">S 
+            U F' U' S' U F U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_LB)&amp;alg=F'_U_F_E2_F'_U'_F_E2&amp;animtype=solve">F' 
+            U F E2 F' U' F E2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_LF)&amp;alg=F2_L'_S'_L_F2_L'_S_L&amp;animtype=solve">F2 
+            L' S' L F2 L' S L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_LD)&amp;alg=L'_F2_L'_S'_L_F2_L'_S_L2&amp;animtype=solve">L' 
+            F2 L' S' L F2 L' S L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_DF)&amp;alg=F_D'_S2_D_F'_D'_S2_D&amp;animtype=solve">F 
+            D' S2 D F' D' S2 D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_DL)&amp;alg=D_F_D'_S2_D_F'_D'_S2&amp;animtype=solve">D 
+            F D' S2 D F' D' S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_DR)&amp;alg=U2_S2_U'_F'_U_S2_U'_F_U'&amp;animtype=solve">U2 
+            S2 U' F' U S2 U' F U'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RF DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RF_DB)&amp;alg=D2_F_D'_S2_D_F'_D'_S2_D'&amp;animtype=solve">D2 
+            F D' S2 D F' D' S2 D'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RF_DB)&amp;alg=u_M2_U_L'_U'_M2_U_L_U'_u'&amp;animtype=solve">u 
+            M2 U L' U' M2 U L U' u'</A> (10 WTM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_UB)&amp;alg=U'_L'_E_L_U'_L'_E'_L_U2&amp;animtype=solve">U' 
+            L' E L U' L' E' L U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_UL)&amp;alg=L'_E_L_U2_L'_E'_L_U2&amp;animtype=solve">L' 
+            E L U2 L' E' L U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_UF)&amp;alg=F'_E2_F_U_F'_E2_F_U'&amp;animtype=solve">F' 
+            E2 F U F' E2 F U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_FU)&amp;alg=b_B_L'_B'_M'_B_L_B'_M_b'&amp;animtype=solve">b 
+            B L' B' M' B L B' M b'</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RB_FU)&amp;alg=b'_U2_M_U_R2_U'_M'_U_R2_U_b&amp;animtype=solve">b' 
+            U2 M U R2 U' M' U R2 U b</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RB_FU)&amp;alg=S_B_M'_B'_R'_B_M_B'_R_S'&amp;animtype=solve">S 
+            B M' B' R' B M B' R S'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Wide setup into Toss Up<BR>Wide setup into Drop and 
+            Catch<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_FL)&amp;alg=L2_E_L_U2_L'_E'_L_U2_L&amp;animtype=solve">L2 
+            E L U2 L' E' L U2 L</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_FR)&amp;alg=B_U'_B_E_B_U_B_E'&amp;animtype=solve">B 
+            U' B' E B U B' E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_FD)&amp;alg=u_M'_U'_R_U_M_U'_R'_E&amp;animtype=solve">u 
+            M' U' R U M U' R' E</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RB_FD)&amp;alg=F'_B_U'_B'_E_B_U_B'_E'_F&amp;animtype=solve">F' 
+            B U' B' E B U B' E' F</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_RF)&amp;alg=F2_E2_F_U_F'_E2_F_U'_F&amp;animtype=solve">F2 
+            E2 F U F' E2 F U' F</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_RD)&amp;alg=S'_U'_B_U_S_U'_B'_U&amp;animtype=solve">S' 
+            U' B U S U' B' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_BU)&amp;alg=E'_R'_F_M2_F'_R_F_M2_F'_E&amp;animtype=solve">E' 
+            R' F M2 F' R F M2 F' E</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_BL)&amp;alg=E_L_U2_L'_E'_L_U2_L'&amp;animtype=solve">E 
+            L U2 L' E' L U2 L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_BD)&amp;alg=D'_S'_U'_B_U_S_U'_B'_U_D&amp;animtype=solve">D' 
+            S' U' B U S U' B' U D</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RB_BD)&amp;alg=u'_M_U'_L_U_M'_U'_L'_U_u&amp;animtype=solve">u' 
+            M U' L U M' U' L' U u</A> (10 WTM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up<BR>Wide setup into Toss 
+          Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_LU)&amp;alg=S_U'_B_U_S'_U'_B'_U&amp;animtype=solve">S 
+            U' B U S' U' B' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_LB)&amp;alg=B2_L_S'_L'_B2_L_S_L'&amp;animtype=solve">B2 
+            L S' L' B2 L S L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_LF)&amp;alg=E2_F_U_F'_E2_F_U'_F'&amp;animtype=solve">E2 
+            F U F' E2 F U' F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_LD)&amp;alg=L_B2_L_S'_L'_B2_L_S_L2&amp;animtype=solve">L 
+            B2 L S' L' B2 L S L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_DF)&amp;alg=D2_B'_D_S2_D'_B_D_S2_D&amp;animtype=solve">D2 
+            B' D S2 D' B D S2 D</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RB_DF)&amp;alg=u'_M2_U'_L_U_M2_U'_L'_U_u&amp;animtype=solve">u' 
+            M2 U' L U M2 U' L' U u</A> (10 WTM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_DL)&amp;alg=D'_B'_D_S2_D'_B_D_S2&amp;animtype=solve">D' 
+            B' D S2 D' B D S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_DR)&amp;alg=D_B'_D_S2_D'_B_D_S2_D2&amp;animtype=solve">D 
+            B' D S2 D' B D S2 D2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RB_DR)&amp;alg=B'_R2_U_M2_U'_R2_U_M2_U'_B&amp;animtype=solve">B' 
+            R2 U M2 U' R2 U M2 U' B</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RB DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RB_DB)&amp;alg=B'_D_S2_D'_B_D_S2_D'&amp;animtype=solve">B' 
+            D S2 D' B D S2 D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_UB)&amp;alg=M'_D_M_U'_M'_D'_M_U&amp;animtype=solve">M' 
+            D M U' M' D' M U</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RD_UB)&amp;alg=U_R'_E'_R_U'_R'_E_R&amp;animtype=solve">U 
+            R' E' R U' R' E R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_UL)&amp;alg=U2_R'_E'_R_U2_R'_E_R&amp;animtype=solve">U2 
+            R' E' R U2 R' E R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_UF)&amp;alg=M_D'_M'_U_M_D_M'_U'&amp;animtype=solve">M 
+            D' M' U M D M' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_FU)&amp;alg=S_D'_F2_D_S'_D'_F2_D&amp;animtype=solve">S 
+            D' F2 D S' D' F2 D</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RD_FU)&amp;alg=M2_D_M_U'_M'_D'_M_U_M&amp;animtype=solve">M2 
+            D M U' M' D' M U M</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_FL)&amp;alg=R'_F2_R_S'_R'_F2_R_S&amp;animtype=solve">R' 
+            F2 R S' R' F2 R S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_FR)&amp;alg=S_D'_F_D_S'_D'_F'_D&amp;animtype=solve">S 
+            D' F D S' D' F' D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_FD)&amp;alg=D'_M'_U_M_D_M'_U'_M&amp;animtype=solve">D' 
+            M' U M D M' U' M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_RF)&amp;alg=U_F'_U'_S'_U_F_U'_S&amp;animtype=solve">U 
+            F' U' S' U F U' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_RB)&amp;alg=U'_B_U_S'_U'_B'_U_S&amp;animtype=solve">U' 
+            B U S' U' B' U S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_BU)&amp;alg=R_B'_R'_S'_R_B_R'_S&amp;animtype=solve">R 
+            B' R' S' R B R' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_BR)&amp;alg=S_D_B'_D'_S'_D_B_D'&amp;animtype=solve">S 
+            D B' D' S' D B D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_BL)&amp;alg=R_B2_R'_S'_R_B2_R'_S&amp;animtype=solve">R 
+            B2 R' S' R B2 R' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_BD)&amp;alg=D_M_U'_M'_D'_M_U_M'&amp;animtype=solve">D 
+            M U' M' D' M U M'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_LU)&amp;alg=U2_R2_U_M_U'_R2_U_M'_U&amp;animtype=solve">U2 
+            R2 U M U' R2 U M' U</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RD_LU)&amp;alg=R'_E_R'_U2_R_E'_R'_U2_R2&amp;animtype=solve">R' 
+            E R' U2 R E' R' U2 R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_LB)&amp;alg=U'_B'_U_S'_U'_B_U_S&amp;animtype=solve">U' 
+            B' U S' U' B U S</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_RD_LB)&amp;alg=S_R'_B2_R_S'_R'_B2_R&amp;animtype=solve">S 
+            R' B2 R S' R' B2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_LF)&amp;alg=U_F_U'_S'_U_F'_U'_S&amp;animtype=solve">U 
+            F U' S' U F' U' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_LD)&amp;alg=R'_E_R_D2_R'_E'_R_D2&amp;animtype=solve">R' 
+            E R D2 R' E' R D2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_DF)&amp;alg=U_F2_U'_S'_U_F2_U'_S&amp;animtype=solve">U 
+            F2 U' S' U F2 U' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_DL)&amp;alg=D'_M_D'_R2_D_M'_D'_R2_D2&amp;animtype=solve">D' 
+            M D' R2 D M' D' R2 D2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR RD DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_RD_DB)&amp;alg=U'_B2_U_S'_U'_B2_U_S&amp;animtype=solve">U' 
+            B2 U S' U' B2 U S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_UL)&amp;alg=L'_B_L'_S2_L_B'_L'_S2_L2&amp;animtype=solve">L' 
+            B L' S2 L B' L' S2 L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_UF)&amp;alg=B'_R_B_M'_B'_R'_B_M&amp;animtype=solve">B' 
+            R B M' B' R' B M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_FU)&amp;alg=B'_R_B'_M2_B_R'_B'_M2_B2&amp;animtype=solve">B' 
+            R B' M2 B R' B' M2 B2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_FL)&amp;alg=L2_B_L'_S2_L_B'_L'_S2_L'&amp;animtype=solve">L2 
+            B L' S2 L B' L' S2 L'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_FR)&amp;alg=F_M2_F'_R'_F_M2_F'_R&amp;animtype=solve">F 
+            M2 F' R' F M2 F' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_FD)&amp;alg=B'_R_B_M2_B'_R'_B_M2&amp;animtype=solve">B' 
+            R B M2 B' R' B M2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_RF)&amp;alg=S_F'_M_F_R_F'_M'_F_R'_S'&amp;animtype=solve">S 
+            F' M F R F' M' F R' S'</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BU_RF)&amp;alg=f'_M_F'_L_F_M'_F'_L'_F_f&amp;animtype=solve">f' 
+            M F' L F M' F' L' F f</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BU_RF)&amp;alg=f_U2_M'_U'_R2_U_M_U'_R2_U'_f'&amp;animtype=solve">f 
+            U2 M' U' R2 U M U' R2 U' f'</A> (11 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>Wide setup into Toss 
+            Up<BR>Wide setup into A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_RB)&amp;alg=U_R_B'_M2_B_R'_B'_M2_B_U'&amp;animtype=solve">U 
+            R B' M2 B R' B' M2 B U'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_RD)&amp;alg=D_B2_D'_S_D_B2_D'_S'&amp;animtype=solve">D 
+            B2 D' S D B2 D' S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_BR)&amp;alg=R2_F_M2_F'_R_F_M2_F'_R&amp;animtype=solve">R2 
+            F M2 F' R F M2 F' R</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_BL)&amp;alg=B_L'_S2_L_B'_L'_S2_L&amp;animtype=solve">B 
+            L' S2 L B' L' S2 L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_BD)&amp;alg=B2_D'_S_D_B2_D'_S'_D&amp;animtype=solve">B2 
+            D' S D B2 D' S' D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_LU)&amp;alg=S_R_B'_R'_S'_R_B_R'&amp;animtype=solve">S 
+            R B' R' S' R B R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_LB)&amp;alg=R_L_U'_L'_E_L_U_L'_E'_R'&amp;animtype=solve">R 
+            L U' L' E L U L' E' R'</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BU_LB)&amp;alg=l_L_F'_L'_S'_L_F_L'_S_l'&amp;animtype=solve">l 
+            L F' L' S' L F L' S l'</A> (10 WTM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up<BR>Wide setup into Toss 
+          Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_LF)&amp;alg=r'_E_R_U'_R'_E'_R_U_M'&amp;animtype=solve">r' 
+            E R U' R' E' R U M'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BU_LF)&amp;alg=M_R'_E_R_U'_R'_E'_R_U_M'&amp;animtype=solve">M 
+            R' E R U' R' E' R U M'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_LD)&amp;alg=M_U_M_D_M'_U'_M_D'_M2&amp;animtype=solve">M 
+            U M D M' U' M D' M2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_DF)&amp;alg=B'_R_B'_M_B_R'_B'_M'_B2&amp;animtype=solve">B' 
+            R B' M B R' B' M' B2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_DL)&amp;alg=L_B_L'_S2_L_B'_L'_S2&amp;animtype=solve">L 
+            B L' S2 L B' L' S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_DR)&amp;alg=D_M'_D'_R2_D_M_D'_R2&amp;animtype=solve">D 
+            M' D' R2 D M D' R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BU DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BU_DB)&amp;alg=M'_D'_R2_D_M_D'_R2_D&amp;animtype=solve">M' 
+            D' R2 D M D' R2 D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_UB)&amp;alg=U2_F_E'_F'_U'_F_E_F'_U'&amp;animtype=solve">U2 
+            F E' F' U' F E F' U'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_UL)&amp;alg=L_E2_L'_U2_L_E2_L'_U2&amp;animtype=solve">L 
+            E2 L' U2 L E2 L' U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_UF)&amp;alg=F_E'_F'_U_F_E_F'_U'&amp;animtype=solve">F 
+            E' F' U F E F' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_FU)&amp;alg=R_B'_M2_B_R'_B'_M2_B&amp;animtype=solve">R 
+            B' M2 B R' B' M2 B</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_FL)&amp;alg=E2_L'_U2_L_E2_L'_U2_L&amp;animtype=solve">E2 
+            L' U2 L E2 L' U2 L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_FR)&amp;alg=U'_R2_F'_M_F_R2_F'_M'_F_U&amp;animtype=solve">U' 
+            R2 F' M F R2 F' M' F U</A> (10 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BR_FR)&amp;alg=S2_R'_S'_R2_S_R'_S2&amp;animtype=solve">S2 
+            R' S' R2 S R' S2</A> (7 STM)</FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch<BR>SP7 for 
+        3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_FD)&amp;alg=U_M'_U'_R'_U_M_U'_R&amp;animtype=solve">U 
+            M' U' R' U M U' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_RF)&amp;alg=E'_F'_U_F_E_F'_U'_F&amp;animtype=solve">E' 
+            F' U F E F' U' F</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_RD)&amp;alg=D_B'_D'_S_D_B_D'_S'&amp;animtype=solve">D 
+            B' D' S D B D' S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_BU)&amp;alg=R'_F_M2_F'_R'_F_M2_F'_R2&amp;animtype=solve">R' 
+            F M2 F' R' F M2 F' R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_BL)&amp;alg=R_E_L2_E'_R'_E_L2_E'&amp;animtype=solve">R 
+            E L2 E' R' E L2 E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_BD)&amp;alg=U'_M_U_R'_U'_M'_U_R&amp;animtype=solve">U' 
+            M U R' U' M' U R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_LU)&amp;alg=U'_M'_U_R'_U'_M_U_R&amp;animtype=solve">U' 
+            M' U R' U' M U R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_LB)&amp;alg=R_B_M_B'_R'_B_M'_B'&amp;animtype=solve">R 
+            B M B' R' B M' B'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_LF)&amp;alg=S'_L'_S_R'_S'_L_S_R&amp;animtype=solve">S' 
+            L' S R' S' L S R</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BR_LF)&amp;alg=F2_E'_F'_U_F_E_F'_U_F'&amp;animtype=solve">F2 
+            E' F' U F E F' U' F'</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_LD)&amp;alg=R_E_L_E'_R'_E_L'_E'&amp;animtype=solve">R 
+            E L E' R' E L' E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_DF)&amp;alg=U'_M2_U_R'_U'_M2_U_R&amp;animtype=solve">U' 
+            M2 U R' U' M2 U R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_DL)&amp;alg=L_B2_L'_S2_L_B2_L'_S2&amp;animtype=solve">L 
+            B2 L' S2 L B2 L' S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BR_DL)&amp;alg=L'_E2_L'_U2_L_E2_L'_U2_L2&amp;animtype=solve">L' 
+            E2 L' U2 L E2 L' U2 L2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_DR)&amp;alg=D'_U'_M2_U_R'_U'_M2_U_R_D&amp;animtype=solve">D' 
+            U' M2 U R' U' M2 U R D</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BR DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BR_DB)&amp;alg=U_M2_U'_R'_U_M2_U'_R&amp;animtype=solve">U 
+            M2 U' R' U M2 U' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_UB)&amp;alg=U_R'_E2_R_U'_R'_E2_R&amp;animtype=solve">U 
+            R' E2 R U' R' E2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_UL)&amp;alg=U2_R'_E2_R_U2_R'_E2_R&amp;animtype=solve">U2 
+            R' E2 R U2 R' E2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_UF)&amp;alg=U'_R'_E2_R_U_R'_E2_R&amp;animtype=solve">U' 
+            R' E2 R U R' E2 R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_FU)&amp;alg=L'_S2_L'_F'_L_S2_L'_F_L2&amp;animtype=solve">L' 
+            S2 L' F' L S2 L' F L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_FL)&amp;alg=L_S'_L2_S_L2_S'_L2_S_L&amp;animtype=solve">L 
+            S' L2 S L2 S' L2 S L</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BL_FL)&amp;alg=L'_y'_M'_U2_M_U2_M'_U2_M_U2_y_L&amp;animtype=solve">L' 
+            y' M' U2 M U2 M' U2 M U2 y L</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>Setup into Slice-Plane</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_FR)&amp;alg=L_U2_L'_E2_L_U2_L'_E2&amp;animtype=solve">L 
+            U2 L' E2 L U2 L' E2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_FD)&amp;alg=U_M'_U_L_U'_M_U_L'_U2&amp;animtype=solve">U 
+            M' U L U' M U L' U2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BL_FD)&amp;alg=L'_S2_L'_F_L_S2_L'_F'_L2&amp;animtype=solve">L' 
+            S2 L' F L S2 L' F' L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_RF)&amp;alg=F2_E_F_U_F'_E'_F_U'_F&amp;animtype=solve">F2 
+            E F U F' E' F U' F</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_RB)&amp;alg=L_U2_L'_E_L_U2_L'_E'&amp;animtype=solve">L 
+            U2 L' E L U2 L' E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_RD)&amp;alg=S'_R_B2_R'_S_R_B2_R'&amp;animtype=solve">S' 
+            R B2 R' S R B2 R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_BU)&amp;alg=L'_S2_L_B_L'_S2_L_B'&amp;animtype=solve">L' 
+            S2 L B L' S2 L B'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_BR)&amp;alg=L'_S2_L_B2_L'_S2_L_B2&amp;animtype=solve">L' 
+            S2 L B2 L' S2 L B2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_BD)&amp;alg=L'_S2_L_B'_L'_S2_L_B&amp;animtype=solve">L' 
+            S2 L B' L' S2 L B</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_LU)&amp;alg=S_R_B2_R'_S'_R_B2_R'&amp;animtype=solve">S 
+            R B2 R' S' R B2 R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_LF)&amp;alg=L_U2_L'_E'_L_U2_L'_E&amp;animtype=solve">L 
+            U2 L' E' L U2 L' E</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_LD)&amp;alg=E2_R'_E'_L'_E_R_E'_L_E'&amp;animtype=solve">E2 
+            R' E' L' E R E' L E'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BL_LD)&amp;alg=R2_S'_R'_B2_R_S_R'_B2_R'&amp;animtype=solve">R2 
+            S' R' B2 R S R' B2 R'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_DF)&amp;alg=U'_M2_U'_L_U_M2_U'_L'_U2&amp;animtype=solve">U' 
+            M2 U' L U M2 U' L' U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_DL)&amp;alg=S2_R_B2_R'_S2_R_B2_R'&amp;animtype=solve">S2 
+            R B2 R' S2 R B2 R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_DR)&amp;alg=R'_E'_R2_E_R2_E'_R2_E_R'&amp;animtype=solve">R' 
+            E' R2 E R2 E' R2 E R'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BL_DR)&amp;alg=L_y_M'_U2_M_U2_M'_U2_M_U2_y'_L'&amp;animtype=solve">L 
+            y M' U2 M U2 M' U2 M U2 y' L'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>Setup into Slice-Plane</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BL DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BL_DB)&amp;alg=U_M2_U_L_U'_M2_U_L'_U2&amp;animtype=solve">U 
+            M2 U L U' M2 U L' U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_UB)&amp;alg=B'_E'_B_U'_B'_E_B_U&amp;animtype=solve">B' 
+            E' B U' B' E B U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_UL)&amp;alg=S'_D_S_U2_S'_D'_S_U2&amp;animtype=solve">S' 
+            D S U2 S' D' S U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_UF)&amp;alg=U'_S_D'_S'_U_S_D_S'&amp;animtype=solve">U' 
+            S D' S' U S D S'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_UF)&amp;alg=B_R_B_M'_B'_R'_B_M_B2&amp;animtype=solve">B 
+            R B M' B' R' B M B2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_FU)&amp;alg=M2_F_R'_F'_M2_F_R_F'&amp;animtype=solve">M2 
+            F R' F' M2 F R F'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_FL)&amp;alg=U2_L'_U_M_U'_L_U_M'_U&amp;animtype=solve">U2 
+            L' U M U' L U M' U</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_FR)&amp;alg=F'_M2_F_R'_F'_M2_F_R&amp;animtype=solve">F' 
+            M2 F R' F' M2 F R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_FD)&amp;alg=D2_M'_U_M_D2_M'_U'_M&amp;animtype=solve">D2 
+            M' U M D2 M' U' M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_RF)&amp;alg=f_M'_F'_R_F_M_F'_R'_S'&amp;animtype=solve">f 
+            M' F' R F M F' R' S'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_RF)&amp;alg=u'_U_R'_U'_M_U_R_U'_M'_u&amp;animtype=solve">u' 
+            U R' U' M U R U' M' u</A> (10 STM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_RF)&amp;alg=S_F_M'_F'_R_F_M_F'_R'_S'&amp;animtype=solve">S 
+            F M' F' R F M F' R' S'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Wide setup into Toss Up<BR>Setup into 
+            Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_RB)&amp;alg=u'_U'_L_U_M_U'_L'_U_M'_u&amp;animtype=solve">u' 
+            U' L U M U' L' U M' u</A> (10 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_RB)&amp;alg=D'_U'_B_U_S'_U'_B'_U_S_D&amp;animtype=solve">D' 
+            U' B U S' U' B' U S D</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Wide setup into Toss Up<BR>Setup into Toss 
+          Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_RD)&amp;alg=M_U'_M'_D_M_U_M'_D'&amp;animtype=solve">M 
+            U' M' D M U M' D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_BU)&amp;alg=D'_S_D_B2_D'_S'_D_B2&amp;animtype=solve">D' 
+            S D B2 D' S' D B2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_BR)&amp;alg=R'_U'_M_U_R_U'_M'_U&amp;animtype=solve">R' 
+            U' M U R U' M' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_BL)&amp;alg=B'_L'_S2_L_B_L'_S2_L&amp;animtype=solve">B' 
+            L' S2 L B L' S2 L</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_BL)&amp;alg=U2_L_U_M_U'_L'_U_M'_U&amp;animtype=solve">U2 
+            L U M U' L' U M' U</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_LU)&amp;alg=S_R_B_R'_S'_R_B'_R'&amp;animtype=solve">S 
+            R B R' S' R B' R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_LB)&amp;alg=d'_S_D_B'_D'_S'_D_B_E&amp;animtype=solve">d' 
+            S D B' D' S' D B E</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_LB)&amp;alg=u'_U'_L'_U_M_U'_L_U_M'_u&amp;animtype=solve">u' 
+            U' L' U M U' L U M' u</A> (10 WTM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_LB)&amp;alg=M_R_E'_R'_U_R_E_R'_U'_M'&amp;animtype=solve">M 
+            R E' R' U R E R' U' M'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Wide setup into Toss Up<BR>Setup into 
+            Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_LF)&amp;alg=r'_E_R_U_R'_E'_R_U'_M'&amp;animtype=solve">r' 
+            E R U R' E' R U' M'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_LF)&amp;alg=E_R_U'_M_U_R'_U'_M'_U_E'&amp;animtype=solve">E 
+            R U' M U R' U' M' U E'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_LD)&amp;alg=M_U'_M'_D'_M_U_M'_D&amp;animtype=solve">M 
+            U' M' D' M U M' D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_DF)&amp;alg=M'_D_R2_D'_M_D_R2_D'&amp;animtype=solve">M' 
+            D R2 D' M D R2 D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_DL)&amp;alg=S2_R_B_R'_S2_R_B'_R'&amp;animtype=solve">S2 
+            R B R' S2 R B' R'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_BD_DL)&amp;alg=U2_L2_U_M_U'_L2_U_M'_U&amp;animtype=solve">U2 
+            L2 U M U' L2 U M' U</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR BD DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_BD_DR)&amp;alg=R2_U'_M_U_R2_U'_M'_U&amp;animtype=solve">R2 
+            U' M U R2 U' M' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_UB)&amp;alg=S'_L'_B_L_S_L'_B'_L&amp;animtype=solve">S' 
+            L' B L S L' B' L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_UF)&amp;alg=S'_L_F'_L'_S_L_F_L'&amp;animtype=solve">S' 
+            L F' L' S L F L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_FU)&amp;alg=R'_F_R_S_R'_F'_R_S'&amp;animtype=solve">R' 
+            F R S R' F' R S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_FL)&amp;alg=R'_F2_R_S_R'_F2_R_S'&amp;animtype=solve">R' 
+            F2 R S R' F2 R S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_FR)&amp;alg=S'_U'_F'_U_S_U'_F_U&amp;animtype=solve">S' 
+            U' F' U S U' F U</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LU_FR)&amp;alg=F_R'_F'_R_S_R'_F_R_f'&amp;animtype=solve">F 
+            R' F' R S R' F R f'</A> (9 WTM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>Wide A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_FD)&amp;alg=R'_F'_R_S_R'_F_R_S'&amp;animtype=solve">R' 
+            F' R S R' F R S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_RF)&amp;alg=S'_L_F2_L'_S_L_F2_L'&amp;animtype=solve">S' 
+            L F2 L' S L F2 L'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LU_RF)&amp;alg=U_M'_U_R_U'_M_U_R'_U2&amp;animtype=solve">U 
+            M' U R U' M U R' U2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_RB)&amp;alg=S'_L'_B2_L_S_L'_B2_L&amp;animtype=solve">S' 
+            L' B2 L S L' B2 L</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LU_RB)&amp;alg=U_M'_U_R'_U'_M_U_R_U2&amp;animtype=solve">U 
+            M' U R' U' M U R U2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_RD)&amp;alg=U_M'_U_R2_U'_M_U_R2_U2&amp;animtype=solve">U 
+            M' U R2 U' M U R2 U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_BU)&amp;alg=R_B'_R'_S_R_B_R'_S'&amp;animtype=solve">R 
+            B' R' S R B R' S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_BR)&amp;alg=R'_U'_M'_U_R_U'_M_U&amp;animtype=solve">R' 
+            U' M' U R U' M U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_BL)&amp;alg=R_B2_R'_S_R_B2_R'_S'&amp;animtype=solve">R 
+            B2 R' S R B2 R' S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_BD)&amp;alg=R_B_R'_S_R_B'_R'_S'&amp;animtype=solve">R 
+            B R' S R B' R' S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_LB)&amp;alg=U_M'_U'_L_U_M_U'_L'&amp;animtype=solve">U 
+            M' U' L U M U' L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_LF)&amp;alg=U_M'_U'_L'_U_M_U'_L&amp;animtype=solve">U 
+            M' U' L' U M U' L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_LD)&amp;alg=U_M'_U'_L2_U_M_U'_L2&amp;animtype=solve">U 
+            M' U' L2 U M U' L2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_DF)&amp;alg=S'_L_F_L'_S_L_F'_L'&amp;animtype=solve">S' 
+            L F L' S L F' L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_DL)&amp;alg=L'_E_L'_U2_L_E'_L'_U2_L2&amp;animtype=solve">L' 
+            E L' U2 L E' L' U2 L2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_DR)&amp;alg=R2_U'_M'_U_R2_U'_M_U&amp;animtype=solve">R2 
+            U' M' U R2 U' M U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LU DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LU_DB)&amp;alg=S'_L'_B'_L_S_L'_B_L&amp;animtype=solve">S' 
+            L' B' L S L' B L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_UB)&amp;alg=U_R_E'_R'_U'_R_E_R'&amp;animtype=solve">U 
+            R E' R' U' R E R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_UL)&amp;alg=U2_R_E'_R'_U2_R_E_R'&amp;animtype=solve">U2 
+            R E' R' U2 R E R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_UF)&amp;alg=U'_R_E'_R'_U_R_E_R'&amp;animtype=solve">U' 
+            R E' R' U R E R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_FU)&amp;alg=M'_U__R_E'_R'_U'_R_E_r'&amp;animtype=solve">M' 
+            U R E' R' U' R E r'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_FU)&amp;alg=M'_U__R_E'_R'_U'_R_E_R'_M&amp;animtype=solve">M' 
+            U R E' R' U' R E R' M</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_FL)&amp;alg=E_L'_U2_L_E'_L'_U2_L&amp;animtype=solve">E 
+            L' U2 L E' L' U2 L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_FR)&amp;alg=R_S'_L_S_R'_S'_L'_S&amp;animtype=solve">R 
+            S' L S R' S' L' S</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_FR)&amp;alg=B'_U'_B'_E_B_U_B'_E'_B2&amp;animtype=solve">B' 
+            U' B' E B U B' E' B2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_FD)&amp;alg=M'_U'_R_E'_R'_U_R_E_r'&amp;animtype=solve">M' 
+            U' R E' R' U R E r'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_FD)&amp;alg=u_M'_U'_R'_U_M_U'_R_U_u'&amp;animtype=solve">u 
+            M' U' R' U M U' R U u'</A> (10 WTM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_FD)&amp;alg=M'_U'_R_E'_R'_U_R_E_R'_M&amp;animtype=solve">M' 
+            U' R E' R' U R E R' M</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Wide setup into Toss Up<BR>Setup into 
+            Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_RF)&amp;alg=E2_F'_U_F_E2_F'_U'_F&amp;animtype=solve">E2 
+            F' U F E2 F' U' F</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_RB)&amp;alg=L_S'_L'_B2_L_S_L'_B2&amp;animtype=solve">L 
+            S' L' B2 L S L' B2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_RD)&amp;alg=R'_B2_R_S_R'_B2_R_S'&amp;animtype=solve">R' 
+            B2 R S R' B2 R S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_BU)&amp;alg=R_E_L_U'_L'_E'_L_U_L'_R'&amp;animtype=solve">R 
+            E L U' L' E' L U L' R'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_BR)&amp;alg=B'_M'_B_R_B'_M_B_R'&amp;animtype=solve">B' 
+            M' B R B' M B R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_BD)&amp;alg=E'_B'_D'_S_D_B_D'_S'_d&amp;animtype=solve">E' 
+            B' D' S D B D' S' d</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_BD)&amp;alg=E'_U'_M_U_R'_U'_M'_U_R_E&amp;animtype=solve">E' 
+            U' M U R' U' M' U R E</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_LU)&amp;alg=L_U_M'_U'_L'_U_M_U&amp;animtype=solve">L 
+            U M' U' L' U M U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_LF)&amp;alg=E'_R_E_L2_E'_R'_E_L2&amp;animtype=solve">E' 
+            R E L2 E' R' E L2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_LD)&amp;alg=E'_R_E_L_E'_R'_E_L'&amp;animtype=solve">E' 
+            R E L E' R' E L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_DF)&amp;alg=F'_E2_F'_U_F_E2_F'_U'_F2&amp;animtype=solve">F' 
+            E2 F' U F E2 F' U' F2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_DF)&amp;alg=u'_M2_U'_L'_U_M2_U'_L_U_u&amp;animtype=solve">u' 
+            M2 U' L' U M2 U' L U u</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_DL)&amp;alg=S2_U'_B'_U_S2_U'_B_U&amp;animtype=solve">S2 
+            U' B' U S2 U' B U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_DR)&amp;alg=R2_S'_L_S_R2_S'_L'_S&amp;animtype=solve">R2 
+            S' L S R2 S' L' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LB DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LB_DB)&amp;alg=L_S'_L'_B'_L_S_L'_B&amp;animtype=solve">L 
+            S' L' B' L S L' B</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LB_DB)&amp;alg=u_M2_U'_R'_U_M2_U'_R_U_u'&amp;animtype=solve">u 
+            M2 U' R' U M2 U' R U u'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Wide setup into Toss 
+        Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_UB)&amp;alg=U_R'_E_R_U'_R'_E'_R&amp;animtype=solve">U 
+            R' E R U' R' E' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_UL)&amp;alg=U2_R'_E_R_U2_R'_E'_R&amp;animtype=solve">U2 
+            R' E R U2 R' E' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_UF)&amp;alg=U'_R'_E_R_U_R'_E'_R&amp;animtype=solve">U' 
+            R' E R U R' E' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_FU)&amp;alg=R'_E'_L'_U_L_E_L'_U'_L_R&amp;animtype=solve">R' 
+            E' L' U L E L' U' L R</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_FR)&amp;alg=F_M_F'_R'_F_M'_F'_R&amp;animtype=solve">F 
+            M F' R' F M' F' R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_FD)&amp;alg=E_F_D_S_D'_F'_D_S'_d'&amp;animtype=solve">E 
+            F D S D' F' D S' d'</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_FD)&amp;alg=E_U_M'_U'_R_U_M_U'_R'_E'&amp;animtype=solve">E 
+            U M' U' R U M U' R' E'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_RF)&amp;alg=L'_S'_L_B2_L'_S_L_F2&amp;animtype=solve">L' 
+            S' L F2 L' S L F2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_RB)&amp;alg=E2_B_U'_B'_E2_B_U_B'&amp;animtype=solve">E2 
+            B U' B' E2 B U B'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_RD)&amp;alg=R_F2_R'_S_R_F2_R'_S'&amp;animtype=solve">R 
+            F2 R' S R F2 R' S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_BU)&amp;alg=M_U'__R'_E_R_U_R'_E'_r&amp;animtype=solve">M 
+            U' R' E R U R' E' r</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_BU)&amp;alg=M_U'__R'_E_R_U_R'_E'_R_M'&amp;animtype=solve">M 
+            U' R' E R U R' E' R M'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_BR)&amp;alg=R'_S'_L'_S_R_S'_L_S&amp;animtype=solve">R' 
+            S' L' S R S' L S</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_BR)&amp;alg=F_U_F_E'_F'_U'_F_E_F2&amp;animtype=solve">F 
+            U F E' F' U' F E F2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_BL)&amp;alg=E'_L_U2_L'_E_L_U2_L'&amp;animtype=solve">E' 
+            L U2 L' E L U2 L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_BD)&amp;alg=M_U_R'_E_R_U'_R'_E'_r&amp;animtype=solve">M 
+            U R' E R U' R' E' r</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_BD)&amp;alg=u'_M_U_R_U'_M'_U_R'_U'_u&amp;animtype=solve">u' 
+            M U R U' M' U R' U' u</A> (10 WTM)<SUP>*</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_BD)&amp;alg=M_U_R'_E_R_U'_R'_E'_R_M'&amp;animtype=solve">M 
+            U R' E R U' R' E' R M'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Wide setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_LU)&amp;alg=L'_U'_M_U_L_U'_M'_U'&amp;animtype=solve">L' 
+            U' M U L U' M' U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_LB)&amp;alg=E_R'_E'_L2_E_R_E'_L2&amp;animtype=solve">E 
+            R' E' L2 E R E' L2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_LD)&amp;alg=E_R'_E'_L'_E_R_E'_L&amp;animtype=solve">E 
+            R' E' L' E R E' L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_DF)&amp;alg=L'_S'_L_F_L'_S_L_F'&amp;animtype=solve">L' 
+            S' L F L' S L F'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_DF)&amp;alg=u'_M2_U_R_U'_M2_U_R'_U'_u&amp;animtype=solve">u' 
+            M2 U R U' M2 U R' U' u</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch<BR>Wide setup into Toss 
+        Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_DL)&amp;alg=S2_U_F_U'_S2_U_F'_U'&amp;animtype=solve">S2 
+            U F U' S2 U F' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_DR)&amp;alg=R2_S'_L'_S_R2_S'_L_S&amp;animtype=solve">R2 
+            S' L' S R2 S' L S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LF DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LF_DB)&amp;alg=B_E2_B_U'_B'_E2_B_U_B2&amp;animtype=solve">B 
+            E2 B U' B' E2 B U B2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LF_DB)&amp;alg=u_M2_U_L_U'_M2_U_L'_U'_u'&amp;animtype=solve">u 
+            M2 U L U' M2 U L' U' u'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_UB)&amp;alg=M'_D'_M_U'_M'_D_M_U&amp;animtype=solve">M' 
+            D' M U' M' D M U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_UL)&amp;alg=L_E_L'_U2_L_E'_L'_U2&amp;animtype=solve">L 
+            E L' U2 L E' L' U2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_UF)&amp;alg=M_D_M'_U_M_D'_M'_U'&amp;animtype=solve">M 
+            D M' U M D' M' U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_FU)&amp;alg=R'_F_R'_S'_R_F'_R'_S_R2&amp;animtype=solve">R' 
+            F R' S' R F' R' S R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_FL)&amp;alg=R'_F2_R'_S'_R_F2_R'_S_R2&amp;animtype=solve">R' 
+            F2 R' S' R F2 R' S R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_FR)&amp;alg=E'_L'_E_R'_E'_L_E_R&amp;animtype=solve">E' 
+            L' E R' E' L E R</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_FD)&amp;alg=D_M'_U_M_D'_M'_U'_M&amp;animtype=solve">D 
+            M' U M D' M' U' M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_RF)&amp;alg=U_F'_U_S_U'_F_U_S'_U2&amp;animtype=solve">U 
+            F' U S U' F U S' U2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LD_RF)&amp;alg=d_R'_U_M'_U'_R_U_M_U'_d'&amp;animtype=solve">d 
+            R' U M' U' R U M U' d'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_RB)&amp;alg=U'_B_U'_S_U_B'_U'_S'_U2&amp;animtype=solve">U' 
+            B U' S U B' U' S' U2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LD_RB)&amp;alg=d'_R_U'_M_U_R'_U'_M'_U_d&amp;animtype=solve">d' 
+            R U' M U R' U' M' U d</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_RD)&amp;alg=D2_R'_E_R_D2_R'_E'_R&amp;animtype=solve">D2 
+            R' E R D2 R' E' R</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_LD_RD)&amp;alg=D_M'_U_M_D2_M'_U'_M_D&amp;animtype=solve">D 
+            M' U M D2 M' U' M D</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert<BR>B9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_BU)&amp;alg=R_B'_R_S'_R'_B_R_S_R2&amp;animtype=solve">R 
+            B' R S' R' B R S R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_BR)&amp;alg=E_L_E'_R_E_L'_E'_R'&amp;animtype=solve">E 
+            L E' R E L' E' R'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_BL)&amp;alg=R_B2_R_S'_R'_B2_R_S_R2&amp;animtype=solve">R 
+            B2 R S' R' B2 R S R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_BD)&amp;alg=D'_M_U'_M'_D_M_U_M'&amp;animtype=solve">D' 
+            M U' M' D M U M'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_LU)&amp;alg=L2_U_M'_U'_L2_U_M_U'&amp;animtype=solve">L2 
+            U M' U' L2 U M U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_LB)&amp;alg=L_E'_R_E_L'_E'_R'_E&amp;animtype=solve">L 
+            E' R E L' E' R' E</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_LF)&amp;alg=L'_E_R'_E'_L_E_R_E'&amp;animtype=solve">L' 
+            E R' E' L E R E'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_DF)&amp;alg=M_D'_M_U'_M'_D_M_U_M2&amp;animtype=solve">M 
+            D' M U' M' D M U M2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_DR)&amp;alg=D'_M'_D_R2_D'_M_D_R2&amp;animtype=solve">D' 
+            M' D R2 D' M D R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR LD DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_LD_DB)&amp;alg=M'_D_M'_U_M_D'_M'_U'_M2&amp;animtype=solve">M' 
+            D M' U M D' M' U' M2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_UB)&amp;alg=D_R2_D'_M2_D_R2_D'_M2&amp;animtype=solve">D 
+            R2 D' M2 D R2 D' M2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_UL)&amp;alg=U'_M'_U2_M_U2_M'_U2_M_U'&amp;animtype=solve">U' 
+            M' U2 M U2 M' U2 M U'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DF_UL)&amp;alg=U_M'_U2_M_U&amp;animtype=solve">U 
+            M' U2 M U</A> (5 STM)</FONT></TD>
+          <TD><FONT size=3>SP9<BR>SP5 for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_UF)&amp;alg=D'_S2_D_F2_D'_S2_D_F2&amp;animtype=solve">D' 
+            S2 D F2 D' S2 D F2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_FU)&amp;alg=F2_U_F_E_F'_U'_F_E'_F&amp;animtype=solve">F2 
+            U F E F' U' F E' F</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_FL)&amp;alg=U2_L'_U_M2_U'_L_U_M2_U&amp;animtype=solve">U2 
+            L' U M2 U' L U M2 U</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_FR)&amp;alg=R_U'_M2_U_R'_U'_M2_U&amp;animtype=solve">R 
+            U' M2 U R' U' M2 U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_RF)&amp;alg=E_R'_U'_M2_U_R_U'_M2_u&amp;animtype=solve">E 
+            R' U' M2 U R U' M2 u</A> (9 WTM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DF_RF)&amp;alg=E_R'_U'_M2_U_R_U'_M2_U_E'&amp;animtype=solve">E 
+            R' U' M2 U R U' M2 U E'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Wide A9<BR>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_RB)&amp;alg=D'_S2_D'_B'_D_S2_D'_B_D2&amp;animtype=solve">D' 
+            S2 D' B' D S2 D' B D2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DF_RB)&amp;alg=u'_U'_L_U_M2_U'_L'_U_M2_u&amp;animtype=solve">u' 
+            U' L U M2 U' L' U M2 u</A> (10 WTM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_RD)&amp;alg=M2_U'_M'_D_M_U_M'_D'_M'&amp;animtype=solve">M2 
+            U' M' D M U M' D' M'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_BU)&amp;alg=B2_M_B_R_B'_M'_B_R'_B&amp;animtype=solve">B2 
+            M B R B' M' B R' B</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_BR)&amp;alg=R'_U'_M2_U_R_U'_M2_U&amp;animtype=solve">R' 
+            U' M2 U R U' M2 U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_BL)&amp;alg=R'_E2_R'_D_R_E2_R_D'_R2&amp;animtype=solve">R' 
+            E2 R' D R E2 R' D' R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_BD)&amp;alg=D_R2_D'_M'_D_R2_D'_M&amp;animtype=solve">D 
+            R2 D' M' D R2 D' M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_LU)&amp;alg=L_F_L'_S'_L_F'_L'_S&amp;animtype=solve">L 
+            F L' S' L F' L' S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_LB)&amp;alg=D'_S2_D'_B_D_S2_D'_B'_D2&amp;animtype=solve">D' 
+            S2 D' B D S2 D' B' D2</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DF_LB)&amp;alg=u'_U'_L'_U_M2_U'_L_U_M2_u&amp;animtype=solve">u' 
+            U' L' U M2 U' L U M2 u</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>Wide setup into Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_LF)&amp;alg=F_L'_S'_L_F'_L'_S_L&amp;animtype=solve">F 
+            L' S' L F' L' S L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_LD)&amp;alg=M2_U'_M'_D'_M_U_M'_D_M'&amp;animtype=solve">M2 
+            U' M' D' M U M' D M'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_DL)&amp;alg=S2_U_F2_U'_S2_U_F2_U'&amp;animtype=solve">S2 
+            U F2 U' S2 U F2 U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_DR)&amp;alg=R2_U'_M2_U_R2_U'_M2_U&amp;animtype=solve">R2 
+            U' M2 U R2 U' M2 U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DF DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DF_DB)&amp;alg=D_S'_U2_S_D2_S'_U2_S_D&amp;animtype=solve">D 
+            S' U2 S D2 S' U2 S D</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DF_DB)&amp;alg=U_M'_U2_M_D2_M'_U2_M_D2_U'&amp;animtype=solve">U 
+            M' U2 M D2 M' U2 M D2 U'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>B9<BR>Setup into Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_UB)&amp;alg=S2_D'_B2_D_S2_D'_B2_D&amp;animtype=solve">S2 
+            D' B2 D S2 D' B2 D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_UL)&amp;alg=S_U2_S'_U2_S_U2_S'_U2&amp;animtype=solve">S 
+            U2 S' U2 S U2 S' U2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_UL)&amp;alg=y'_M'_U2_M_U2_M'_U2_M_U2_y&amp;animtype=solve">y' 
+            M' U2 M U2 M' U2 M U2 y</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_UL)&amp;alg=U2_S_U2_S'&amp;animtype=solve">U2 
+            S U2 S'</A> (4 STM)<BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_UL)&amp;alg=y'_U2_M'_U2_M_y&amp;animtype=solve">y' 
+            U2 M' U2 M y</A> (4 STM)</FONT></TD>
+          <TD><FONT size=3>Slice-Plane<BR>Slice-Plane<BR>Half Slice-Plane for 
+            3x3<BR>Half Slice-Plane for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_UF)&amp;alg=S2_D_F2_D'_S2_D_F2_D'&amp;animtype=solve">S2 
+            D F2 D' S2 D F2 D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_FU)&amp;alg=R'_F_R_S2_R'_F'_R_S2&amp;animtype=solve">R' 
+            F R S2 R' F' R S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_FL)&amp;alg=R'_F2_R_S2_R'_F2_R_S2&amp;animtype=solve">R' 
+            F2 R S2 R' F2 R S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_FR)&amp;alg=S2_L'_F2_L_S2_L'_F2_L&amp;animtype=solve">S2 
+            L' F2 L S2 L' F2 L</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_FD)&amp;alg=R'_F'_R_S2_R'_F_R_S2&amp;animtype=solve">R' 
+            F' R S2 R' F R S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_RF)&amp;alg=U_F'_U'_S2_U_F_U'_S2&amp;animtype=solve">U 
+            F' U' S2 U F U' S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_RF)&amp;alg=L2_U2_L_E'_L'_U2_L_E_L&amp;animtype=solve">L2 
+            U2 L E' L' U2 L E L</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_RB)&amp;alg=U'_B_U_S2_U'_B'_U_S2&amp;animtype=solve">U' 
+            B U S2 U' B' U S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_RB)&amp;alg=L2_U2_L'_E_L_U2_L'_E'_L'&amp;animtype=solve">L2 
+            U2 L' E L U2 L' E' L'</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_RD)&amp;alg=D2_R2_D'_M'_D_R2_D'_M_D'&amp;animtype=solve">D2 
+            R2 D' M' D R2 D' M D'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_RD)&amp;alg=R_E_R_D2_R'_E'_R_D2_R2&amp;animtype=solve">R 
+            E R D2 R' E' R D2 R2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_BU)&amp;alg=R_B'_R'_S2_R_B_R'_S2&amp;animtype=solve">R 
+            B' R' S2 R B R' S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_BR)&amp;alg=S2_L_B2_L'_S2_L_B2_L'&amp;animtype=solve">S2 
+            L B2 L' S2 L B2 L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_BL)&amp;alg=R_B2_R'_S2_R_B2_R'_S2&amp;animtype=solve">R 
+            B2 R' S2 R B2 R' S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_BD)&amp;alg=R_B_R'_S2_R_B'_R'_S2&amp;animtype=solve">R 
+            B R' S2 R B' R' S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_LU)&amp;alg=L2_U2_L_E_L'_U2_L_E'_L&amp;animtype=solve">L2 
+            U2 L E L' U2 L E' L</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_LB)&amp;alg=U'_B'_U_S2_'U_B_U_S2&amp;animtype=solve">U' 
+            B' U S2 U' B U S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_LF)&amp;alg=U_F_U'_S2_U_F'_U'_S2&amp;animtype=solve">U 
+            F U' S2 U F' U' S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_DF)&amp;alg=U_F2_U'_S2_U_F2_U'_S2&amp;animtype=solve">U 
+            F2 U' S2 U F2 U' S2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_DF)&amp;alg=U'_M2_U'_L2_U_M2_U'_L2_U2&amp;animtype=solve">U' 
+            M2 U' L2 U M2 U' L2 U2</A> (9 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up<BR>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_DR)&amp;alg=S'_R2_S_R2_S'_R2_S_R2&amp;animtype=solve">S' 
+            R2 S R2 S' R2 S R2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_DR)&amp;alg=y_D2_M'_U2_M_D2_M'_U2_M_y'&amp;animtype=solve">y 
+            D2 M' U2 M D2 M' U2 M y'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DL_DR)&amp;alg=R2_S'_R2_S&amp;animtype=solve">R2 
+            S' R2 S</A> (4 STM)</FONT></TD>
+          <TD><FONT size=3>Slice-Plane<BR>Slice Plane<BR>Half Slice-Plane for 
+            3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DL DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DL_DB)&amp;alg=U'_B2_U_S2_U'_B2_U_S2&amp;animtype=solve">U' 
+            B2 U S2 U' B2 U S2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_UB)&amp;alg=R2_D'_M2_D_R2_D'_M2_D&amp;animtype=solve">R2 
+            D' M2 D R2 D' M2 D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop abd Catcg</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_UL)&amp;alg=U2_S'_U2_S_U2_S'_U2_S&amp;animtype=solve">U2 
+            S' U2 S U2 S' U2 S</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_UL)&amp;alg=y_U2_M'_U2_M_U2_M'_U2_M_y'&amp;animtype=solve">y 
+            U2 M' U2 M U2 M' U2 M y'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_UL)&amp;alg=R2_S_R2_S'&amp;animtype=solve">R2 
+            S R2 S'</A> (4 STM)<BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_UL)&amp;alg=y_M'_U2_M_U2_y'&amp;animtype=solve">y 
+            M' U2 M U2 y'</A> (4 STM)</FONT></TD>
+          <TD><FONT size=3>Slice-Plane<BR>Slice Plane<BR>Half Slice-Plane for 
+            3x3<BR>Half Slice-Plane for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_UF)&amp;alg=R2_D_M2_D'_R2_D_M2_D'&amp;animtype=solve">R2 
+            D M2 D' R2 D M2 D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_FU)&amp;alg=R2_D'_M_D_R2_D'_M'_D&amp;animtype=solve">R2 
+            D' M D R2 D' M' D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_FL)&amp;alg=R'_E_R2_E'_R2_E_R2_E'_R'&amp;animtype=solve">R' 
+            E R2 E' R2 E R2 E' R'</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_FL)&amp;alg=L'_y_U2_M'_U2_M_U2_M'_U2_M_y'_L&amp;animtype=solve">L' 
+            y U2 M' U2 M U2 M' U2 M y' L</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>Setup into Slice-Plane</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_FR)&amp;alg=F_U_M'_U'_R2_U_M_U'_R2_F'&amp;animtype=solve">F 
+            U M' U' R2 U M U' R2 F'</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_FD)&amp;alg=U_M'_U'_R2_U_M_U'_R2&amp;animtype=solve">U 
+            M' U' R2 U M U' R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_RF)&amp;alg=U_F'_U_S2_U'_F_U_S2_U2&amp;animtype=solve">U 
+            F' U S2 U' F U S2 U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_RB)&amp;alg=U'_B_U'_S2_U_B'_U'_S2_U2&amp;animtype=solve">U' 
+            B U' S2 U B' U' S2 U2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_BU)&amp;alg=R2_D_M'_D'_R2_D_M_D'&amp;animtype=solve">R2 
+            D M' D' R2 D M D'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_BR)&amp;alg=B'_U'_M_U_R2_U'_M'_U_R2_B&amp;animtype=solve">B' 
+            U' M U R2 U' M' U R2 B</A> (10 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Setup into Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_BL)&amp;alg=R_E'_R2_E_R2_E'_R2_E_R&amp;animtype=solve">R 
+            E' R2 E R2 E' R2 E R</A> (9 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_BL)&amp;alg=L_y_U2_M'_U2_M_U2_M'_U2_M_y'_L'&amp;animtype=solve">L 
+            y U2 M' U2 M U2 M' U2 M y' L'</A> (10 STM)<SUP>*</SUP></FONT></TD>
+          <TD><FONT size=3>SP9<BR>Setup into Slice-Plane</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR BD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_BD)&amp;alg=U'_M_U_R2_U'_M'_U_R2&amp;animtype=solve">U' 
+            M U R2 U' M' U R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_LU)&amp;alg=U'_M'_U_R2_U'_M_U_R2&amp;animtype=solve">U' 
+            M' U R2 U' M U R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_LB)&amp;alg=S'_L_S_R2_S'_L'_S_R2&amp;animtype=solve">S' 
+            L S R2 S' L' S R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_LF)&amp;alg=S'_L'_S_R2_S'_L_S_R2&amp;animtype=solve">S' 
+            L' S R2 S' L S R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_LD)&amp;alg=R2_D'_M'_D_R2_D'_M_D&amp;animtype=solve">R2 
+            D' M' D R2 D' M D</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Direct Insert</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_DF)&amp;alg=U'_M2_U_R2_U'_M2_U_R2&amp;animtype=solve">U' 
+            M2 U R2 U' M2 U R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_DL)&amp;alg=S'_U2_S_D2_S'_U2_S_D2&amp;animtype=solve">S' 
+            U2 S D2 S' U2 S D2</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_DL)&amp;alg=y_M'_U2_M_D2_M'_U2_M_D2_y'&amp;animtype=solve">y 
+            M' U2 M D2 M' U2 M D2 y'</A> (8 STM)<SUP>**</SUP><BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_DL)&amp;alg=S'_R2_S_R2&amp;animtype=solve">S' 
+            R2 S R2</A> (4 STM)<BR><A 
+            href="http://alg.garron.us/?name=(UR_DR_DL)&amp;alg=y_x_M'_U2_M_U2_x'_y'&amp;animtype=solve">y 
+            x M' U2 M U2 x' y'</A> (4 STM)</FONT></TD>
+          <TD><FONT size=3>Slice-Plane<BR>Slice Plane<BR>Half Slice-Plane for 
+            3x3<BR>Half Slice-Plane for 3x3</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DR DB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DR_DB)&amp;alg=U_M2_U'_R2_U_M2_U'_R2&amp;animtype=solve">U 
+            M2 U' R2 U M2 U' R2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB UB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_UB)&amp;alg=D_S2_D'_B2_D_S2_D'_B2&amp;animtype=solve">D 
+            S2 D' B2 D S2 D' B2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB UL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_UL)&amp;alg=U_M_U2_M'_U2_M_U2_M'_U&amp;animtype=solve">U 
+            M U2 M' U2 M U2 M' U</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>SP9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB UF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_UF)&amp;alg=D'_R2_D_M2_D'_R2_D_M2&amp;animtype=solve">D' 
+            R2 D M2 D' R2 D M2</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB FU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_FU)&amp;alg=F2_M'_F'_R'_F_M_F'_R_F'&amp;animtype=solve">F2 
+            M' F' R' F M F' R F'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB FL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_FL)&amp;alg=U2_L'_U'_M2_U_L_U'_M2_U'&amp;animtype=solve">U2 
+            L' U' M2 U L U' M2 U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB FR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_FR)&amp;alg=R_U_M2_U'_R'_U_M2_U'&amp;animtype=solve">R 
+            U M2 U' R' U M2 U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB FD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_FD)&amp;alg=D'_R2_D_M_D'_R2_D_M'&amp;animtype=solve">D' 
+            R2 D M D' R2 D M'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB RF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_RF)&amp;alg=D_S2_D_F_D'_S2_D_F'_D2&amp;animtype=solve">D 
+            S2 D F D' S2 D F' D2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB RB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_RB)&amp;alg=D_S2_D'_B'_D_S2_D'_B&amp;animtype=solve">D 
+            S2 D' B' D S2 D' B</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB RD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_RD)&amp;alg=R'_B_R_S_R'_B'_R_S'&amp;animtype=solve">R' 
+            B R S R' B' R S'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB BU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_BU)&amp;alg=D'_R2_D_M'_D'_R2_D_M&amp;animtype=solve">D' 
+            R2 D M' D' R2 D M</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB BR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_BR)&amp;alg=R'_U_M2_U'_R_U_M2_U'&amp;animtype=solve">R' 
+            U M2 U' R U M2 U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB BL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_BL)&amp;alg=U2_L_U'_M2_U_L'_U'_M2_U'&amp;animtype=solve">U2 
+            L U' M2 U L' U' M2 U'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB LU)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_LU)&amp;alg=L'_B'_L_S'_L'_B_L_S&amp;animtype=solve">L' 
+            B' L S' L' B L S</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB LB)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_LB)&amp;alg=B'_L_S'_L'_B_L_S_L'&amp;animtype=solve">B' 
+            L S' L' B L S L'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB LF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_LF)&amp;alg=D_S2_D_F'_D'_S2_D_F_D2&amp;animtype=solve">D 
+            S2 D F' D' S2 D F D2</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB LD)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_LD)&amp;alg=M2_U_M_D_M'_U'_M_D'_M_&amp;animtype=solve">M2 
+            U M D M' U' M D' M </A>(9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>A9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB DF)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_DF)&amp;alg=D'_S_D2_S'_D2_S_D2_S'_D'&amp;animtype=solve">D' 
+            S D2 S' D2 S D2 S' D'</A> (9 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>SP9</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB DL)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_DL)&amp;alg=S2_U'_B2_U_S2_U'_B2_U&amp;animtype=solve">S2 
+            U' B2 U S2 U' B2 U</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Toss Up</FONT></TD></TR>
+        <TR bgColor=white>
+          <TD><FONT size=3>(UR DB DR)</FONT></TD>
+          <TD><FONT size=3><A 
+            href="http://alg.garron.us/?name=(UR_DB_DR)&amp;alg=R2_U_M2_U'_R2_U_M2_U'&amp;animtype=solve">R2 
+            U M2 U' R2 U M2 U'</A> (8 STM)<SUP>**</SUP></FONT></TD>
+          <TD><FONT size=3>Drop and Catch</FONT></TD></TR></TBODY></TABLE><!-- end of outer border color table --></TD></TR></TBODY></TABLE></CENTER>
+<HR>
+<FONT size=3>Go <A 
+href="http://archive.garron.us/html/2009/index.html">back</A>. 
+</FONT></LI></FONT></BODY></HTML>

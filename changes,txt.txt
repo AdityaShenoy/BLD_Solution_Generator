@@ -1,0 +1,20 @@
+Following are the changes that were made manually in the files
+
+-> Changes in edges.txt
+
+1) Changed (R'F') to (R' F') in the (UR FU DL) cycle
+2) Changed (L ') to (L') in the (UR FR LU) cycle
+3) Changed ('U) to (U') in the (UR DL LB) cycle
+4) Changed (S D' S U' S D S' U) to (S D' S' U' S D S' U) in the (UR UF BD) cycle
+5) Changed (L' S' L B2 L' S L F2) to (L' S' L F2 L' S L F2) in the (UR LF RF) cycle
+6) Changed (L U M' U' L' U M U) to (L U M' U' L' U M U') in the (UR LB LU) cycle
+7) Changed (L' U' M U L U' M' U') to (L' U' M U L U' M' U) in the (UR LF LU) cycle
+8) Changed (R' E2 R' D R E2 R D' R2) to (R' E2 R' D R E2 R' D' R2) in the (UR DF BL) cycle
+9) Changed (B U' B E B U B E') to (B U' B' E B U B' E') in the (UR RB FR) cycle
+10) Changed (U M D2 M' U M D2 M') to (U M D2 M' U' M D2 M') in the (UR UF DF) cycle
+11) Changed (M' U M D2 M' U M D2) to (M' U M D2 M' U' M D2) in the (UR FD BD) cycle
+
+-> Changes in corners.txt
+
+1) Removed the contents between "... 3-cycles starting from a fixed buffer." and "The following are all algorithms ..." for avoiding parsing of wrong table
+2) Changed (D'L2) to (D' L2) in the  (URB DRF UBL) cycle
