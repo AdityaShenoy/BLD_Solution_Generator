@@ -90,10 +90,6 @@ for i, algo in enumerate(c_data['Cleaned Algorithm']):
 e_new_data = DataFrame(e_rel_data)
 c_new_data = DataFrame(c_rel_data)
 
-# Remove duplicate rows
-e_new_data.drop_duplicates(inplace=True)
-c_new_data.drop_duplicates(inplace=True)
-
 # Sort the data by cycles
 e_new_data.sort_values(by='Cycle', inplace=True)
 c_new_data.sort_values(by='Cycle', inplace=True)
@@ -102,6 +98,6 @@ c_new_data.sort_values(by='Cycle', inplace=True)
 e_new_data.to_csv('output/debugging_edges.csv', index=False)
 c_new_data.to_csv('output/debugging_corners.csv', index=False)
 
-# Store only cycle and algorithm columns to the final csv file
-e_new_data[['Cycle', 'Algorithm']].to_csv('output/all_edges.csv', index=False)
-c_new_data[['Cycle', 'Algorithm']].to_csv('output/all_corners.csv', index=False)
+# Store only unique cycle and algorithm columns to the final csv file
+e_new_data[['Cycle', 'Algorithm']].drop_duplicates().to_csv('output/all_edges.csv', index=False)
+c_new_data[['Cycle', 'Algorithm']].drop_duplicates().to_csv('output/all_corners.csv', index=False)

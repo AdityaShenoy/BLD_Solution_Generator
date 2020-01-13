@@ -11,17 +11,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <title>3 Style Algorithms</title>
-  <script>
-
-  </script>
-  <style>
-    
-  </style>
 </head>
 <body>
   <div id="edges_container" class="col-lg-6">
     <label for="edges_select">Select Edge Buffer: </label>
-    <select id="edges_select" class="form-control">
+    <select id="edges_select" class="form-control" onchange="filterEdges(this.value)">
       <option value="All">All</option>
       <option value="A">A</option>
       <option value="B">B</option>
@@ -48,13 +42,17 @@
       <option value="W">W</option>
       <option value="X">X</option>
     </select>
-    <table id="edges_table" class="table-bordered">
+    <table id="edges_table" class="table table-bordered">
+      <tr class="edges_header">
+        <th>Cycle</th>
+        <th>Algorithm</th>
+      </tr>
       <!-- Edge Data Here -->
     </table>
   </div>
   <div id="corners_container" class="col-lg-6">
     <label for="corners_select">Select Corner Buffer: </label>
-    <select id="corners_select" class="form-control">
+    <select id="corners_select" class="form-control" onchange="filterCorners(this.value)">
       <option value="All">All</option>
       <option value="A">A</option>
       <option value="B">B</option>
@@ -81,9 +79,28 @@
       <option value="W">W</option>
       <option value="X">X</option>
     </select>
-    <table id="corners_table" class="table-bordered">
+    <table id="corners_table" class="table table-bordered">
+      <tr class="corners_header">
+        <th>Cycle</th>
+        <th>Algorithm</th>
+      </tr>
       <!-- Corner Data Here -->
     </table>
   </div>
+  <script>
+
+    function filterEdges(val) {
+      $('#edges_table tr').hide();
+      $('.edges_'+val).show();
+      $('.edges_header').show();
+    }
+
+    function filterCorners(val) {
+      $('#corners_table tr').hide();
+      $('.corners_'+val).show();
+      $('.corners_header').show();
+    }
+
+  </script>
 </body>
 </html>
