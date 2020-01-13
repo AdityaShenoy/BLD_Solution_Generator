@@ -1,3 +1,3 @@
-output/
+output/*.csv
 
 __pycache__/*
