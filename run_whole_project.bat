@@ -8,3 +8,5 @@ python related_algorithms_data.py
 cls
 python sort_algos_by_score.py
 cls
+python make_html_data.py
+cls
