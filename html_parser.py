@@ -87,11 +87,11 @@ mhp.feed(edge_content)
 
 # Store the can_data to a csv file
 d = DataFrame(mhp.a_data)
-d.to_csv('parsed_edges.csv', index=False)
+d.to_csv('output/parsed_edges.csv', index=False)
 
 # Feed the corner content to the parser
 mhp.feed(corner_content)
 
 # Store the can_data to a csv file
 d = DataFrame(mhp.a_data)
-d.to_csv('parsed_corners.csv', index=False)
+d.to_csv('output/parsed_corners.csv', index=False)

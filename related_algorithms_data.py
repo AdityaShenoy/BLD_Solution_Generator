@@ -5,8 +5,8 @@ from algorithm import apply
 from os import system, name
 
 # Read the cleaned algorithms from csv files
-e_data = read_csv('cleaned_edges.csv')
-c_data = read_csv('cleaned_corners.csv')
+e_data = read_csv('output/cleaned_edges.csv')
+c_data = read_csv('output/cleaned_corners.csv')
 
 # Initialize related algo data as empty dictionary
 e_rel_data = {'Cycle': [], 'Original': [], 'Cleaned': [], 'Transformation': [], 'Algorithm': []}
@@ -90,14 +90,18 @@ for i, algo in enumerate(c_data['Cleaned Algorithm']):
 e_new_data = DataFrame(e_rel_data)
 c_new_data = DataFrame(c_rel_data)
 
+# Remove duplicate rows
+e_new_data.drop_duplicates(inplace=True)
+c_new_data.drop_duplicates(inplace=True)
+
 # Sort the data by cycles
 e_new_data.sort_values(by='Cycle', inplace=True)
 c_new_data.sort_values(by='Cycle', inplace=True)
 
 # Store all data to debugging csv files
-e_new_data.to_csv('debugging_edges.csv', index=False)
-c_new_data.to_csv('debugging_corners.csv', index=False)
+e_new_data.to_csv('output/debugging_edges.csv', index=False)
+c_new_data.to_csv('output/debugging_corners.csv', index=False)
 
 # Store only cycle and algorithm columns to the final csv file
-e_new_data[['Cycle', 'Algorithm']].to_csv('3_style_edges.csv', index=False)
-c_new_data[['Cycle', 'Algorithm']].to_csv('3_style_corners.csv', index=False)
+e_new_data[['Cycle', 'Algorithm']].to_csv('output/all_edges.csv', index=False)
+c_new_data[['Cycle', 'Algorithm']].to_csv('output/all_corners.csv', index=False)

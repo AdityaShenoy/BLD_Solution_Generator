@@ -61,13 +61,13 @@ def clean_algo(algo):
   return ' '.join(res)
 
 # Read the raw parsed data
-de = read_csv('parsed_edges.csv')
-dc = read_csv('parsed_corners.csv')
+de = read_csv('output/parsed_edges.csv')
+dc = read_csv('output/parsed_corners.csv')
 
 # Apply cleaning algorithm to all the rows
 de['Cleaned Algorithm'] = de['Algorithm'].apply(clean_algo)
 dc['Cleaned Algorithm'] = dc['Algorithm'].apply(clean_algo)
 
 # Save the new data
-de.to_csv('cleaned_edges.csv', index=False)
-dc.to_csv('cleaned_corners.csv', index=False)
+de.to_csv('output/cleaned_edges.csv', index=False)
+dc.to_csv('output/cleaned_corners.csv', index=False)
