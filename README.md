@@ -1,6 +1,9 @@
 # BLD_Solution_Generator
 ## This project generates all possible algorithms for 3 style blindfolded Rubik's cube solving.
 
+The following link is the forum in which the output of this project has been shared in order to help many speed cubers searching for algorithms for 3 style method.
+https://www.speedsolving.com/threads/cheat-sheet-for-3-style-edge-and-corner-algorithms-for-all-buffers.76212/
+
 There are few resources available that contains all 3 style algorithms. If we find one, then it will assume a fixed buffer piece whose algorithm we might not be looking for. This project aims to resolve this issue. As one algorithm is applicable for multiple pieces if we change the viewpoint, this project transforms the algorithms specified for one buffer piece and generates algorithms for all buffer piece.
 
 **face.py** and **cube.py** files contain classes that are used to simulate a cube and its moves.
