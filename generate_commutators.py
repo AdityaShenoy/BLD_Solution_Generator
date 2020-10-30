@@ -36,56 +36,60 @@ parallels = {
     'B': 'FS'
 }
 
+turn_count = {
+    '': 1,
+    '2': 2,
+    '\'': 3
+}
+
 edge_interchanges = {
     'R': ['MNOP', 'BTVJ'],
-    'M': ['AIUS', 'CKWQ'],
+    'M': ['AIUS', 'QCKW'],
     'L': ['EFGH', 'DLXR'],
-    'U': ['ABCD', 'EQMI'],
-    'E': ['FJNR', 'HLPT'],
-    'D': ['UVWX', 'GKOS'],
+    'U': ['ABCD', 'QMIE'],
+    'E': ['FJNR', 'LPTH'],
+    'D': ['UVWX', 'KOSG'],
     'F': ['IJKL', 'CPUF'],
-    'S': ['BOXE', 'DMVG'],
+    'S': ['BOXE', 'MVGD'],
     'B': ['QRST', 'AHWN'],
 }
+
+corner_interchanges = {
+    'R': ['MNOP', 'BTVJ', 'CQWK'],
+    'L': ['EFGH', 'DLXR', 'AIUS'],
+    'U': ['ABCD', 'EQMI', 'FRNJ'],
+    'D': ['UVWX', 'GKOS', 'HLPT'],
+    'F': ['IJKL', 'CPUF', 'DMVG'],
+    'B': ['QRST', 'AHWN', 'BEXO'],
+}
+
+
+def process_commutators(commutators, commutator_type, interchanges,
+                        a1, a1_rot, a1_rot_inv,
+                        a2, a2_rot, a2_rot_inv,
+                        b, b_rot, b_rot_inv):
+    pass
+
 
 with open('output/commutators.csv', 'w') as commutators:
     for a1 in all_slices:
         for a1_rot in quarter_turns:
+            a1_rot_inv = inverse[a1_rot]
             for a2 in adjacents[a1]:
                 for a2_rot in quarter_half_turns:
-                    a1_rot_inv = inverse[a1_rot]
                     a2_rot_inv = inverse[a2_rot]
                     for b in parallels[a2]:
                         for b_rot in quarter_half_turns:
                             b_rot_inv = inverse[b_rot]
-                            commutators.write(f'({a1}{a1_rot} '
-                                              f'{a2}{a2_rot} '
-                                              f'{a1}{a1_rot_inv}) ')
-                            commutators.write(f'{b}{b_rot} ')
-                            commutators.write(f'({a1}{a1_rot} '
-                                              f'{a2}{a2_rot_inv} '
-                                              f'{a1}{a1_rot_inv}) ')
-                            commutators.write(f'{b}{b_rot_inv},')
-
-                            if ('M' in a1 + a2 + b) or \
-                                    ('E' in a1 + a2 + b) or \
-                                    ('S' in a1 + a2 + b):
-                                commutators.write('Edge\n')
+                            if set('MES') & set(a1 + a2 + b):
+                                process_commutators(commutators, 'Edge',
+                                                    edge_interchanges,
+                                                    a1, a1_rot, a1_rot_inv,
+                                                    a2, a2_rot, a2_rot_inv,
+                                                    b, b_rot, b_rot_inv)
                             else:
-                                commutators.write('Corner\n')
-
-                            commutators.write(f'{b}{b_rot} ')
-                            commutators.write(f'({a1}{a1_rot} '
-                                              f'{a2}{a2_rot} '
-                                              f'{a1}{a1_rot_inv}) ')
-                            commutators.write(f'{b}{b_rot_inv} ')
-                            commutators.write(f'({a1}{a1_rot} '
-                                              f'{a2}{a2_rot_inv} '
-                                              f'{a1}{a1_rot_inv}),')
-
-                            if ('M' in a1 + a2 + b) or \
-                                    ('E' in a1 + a2 + b) or \
-                                    ('S' in a1 + a2 + b):
-                                commutators.write('Edge\n')
-                            else:
-                                commutators.write('Corner\n')
+                                process_commutators(commutators, 'Corner',
+                                                    corner_interchanges,
+                                                    a1, a1_rot, a1_rot_inv,
+                                                    a2, a2_rot, a2_rot_inv,
+                                                    b, b_rot, b_rot_inv)
