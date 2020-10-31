@@ -8,7 +8,7 @@ def process(commutators, s, s_slice, s_rot, s_rot_inv,
             a1, a1_slice, a1_rot, a1_rot_inv,
             a2, a2_slice, a2_rot, a2_rot_inv,
             b, b_slice, b_rot, b_rot_inv):
-    
+
     if (s, s_slice, s_rot) == (a1, a1_slice, 4 - a1_rot):
         return
 
@@ -38,7 +38,8 @@ def process(commutators, s, s_slice, s_rot, s_rot_inv,
         commutators.write(',Edge,' if 2 in [a1_slice, a2_slice, b_slice]
                           else ',Corner,')
         commutators.write('Pure\n' if not s
-                          else 'A9/B9\n' if (s, s_slice) == (a1, a1_slice)
+                          else 'A9/B9\n' if (s, s_slice) in [(a1, a1_slice),
+                                                             (b, b_slice)]
                           else 'Setup\n')
 
     cube.solve()
@@ -70,7 +71,8 @@ def process(commutators, s, s_slice, s_rot, s_rot_inv,
         commutators.write(',Edge,' if 2 in [a1_slice, a2_slice, b_slice]
                           else ',Corner,')
         commutators.write('Pure\n' if not s
-                          else 'A9/B9\n' if (s, s_slice) == (a1, a1_slice)
+                          else 'A9/B9\n' if (s, s_slice) in [(a1, a1_slice),
+                                                             (b, b_slice)]
                           else 'Setup\n')
 
     cube.solve()
