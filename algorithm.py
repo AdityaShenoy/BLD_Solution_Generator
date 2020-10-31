@@ -190,7 +190,7 @@ def apply(cube, algo):
   for move in algo1:
 
     # Apply move on the cube
-    d[move[0]](move[1], move[2])
+    d[move[0]](int(move[1]), int(move[2]))
   
   # Return the cube after applying the algorithm on it
   return cube
